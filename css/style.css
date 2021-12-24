@@ -560,3 +560,9 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.best__img:not(img[class]) img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
