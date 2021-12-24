@@ -544,6 +544,10 @@
     position: relative;
     mask-image: url('../img/bestmask.png');
     -webkit-mask-image: url('../img/bestmask.png');
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    width: 662px;
+    height: 580px;
 }
 
 .best-1,
