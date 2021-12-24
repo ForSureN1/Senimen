@@ -318,8 +318,8 @@
 .preview-blob-1 img {
     /* mask-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/sun.svg);
     -webkit-mask-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/sun.svg); */
-    mask-image: url('../img/helena-lopes-e3OUQGT9bWU-unsplash.png');
-    -webkit-mask-image: url('../img/helena-lopes-e3OUQGT9bWU-unsplash.png');
+    mask-image: url('../img/mask3.png');
+    -webkit-mask-image: url('../img/mask3.png');
     /* mask-image: url(#mask);
     -webkit-mask-image: url(#mask); */
     /* mask: url('../img/masksvg2.svg');
