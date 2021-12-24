@@ -1,3 +1,12 @@
+$('.slider__items').slick({
+    autoplay: true,
+    arrows: false,
+    Infinity: true,
+    dots: true,
+    speed: 1500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+})
 document.addEventListener('DOMContentLoaded', () => {
 
     //search header
