@@ -320,14 +320,15 @@
     -webkit-mask-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/sun.svg); */
     mask-image: url('../img/mask3.png');
     -webkit-mask-image: url('../img/mask3.png');
-    /* mask-image: url(#mask);
-    -webkit-mask-image: url(#mask); */
-    /* mask: url('../img/masksvg2.svg');
-    -webkit-mask: url('../img/masksvg2.svg'); */
-    /* mask-size: 100vmin; */
-    mask-repeat: no-repeat;
-    mask-position: center;
-    /* -webkit-mask-size: 100vmin; */
+    -webkit-mask-size: 94%;
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-position: center;
+    width: 1200px;
+    height: 1100px;
+}
+
+.preview-blob-1 * {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
