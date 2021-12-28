@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__items">
+                <a href="#" class="header__logo logo">
+                    <img src="img/svg/logo.svg" alt="Senimen">
+                </a>
+                <nav class="menu">
+                    <ul class="nav__menu">
+                        <li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
+                        <li class="nav__item">
+                            <a href="javascript:;" class="nav__link js-slide">О компании <img src="img/svg/navarrow.svg" alt=""></a>
+                            <div class="nav__under">
+                                <a href="#" class="nav__link">О нас</a>
+                                <a href="#" class="nav__link">Наша Команда</a>
+                            </div>
+                        </li>
+                        <li class="nav__item"><a href="#" class="nav__link">Актуальные новости</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Мероприятия</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Курсы</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">О членстве в РОО</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="header__elems">
+                    <form method="" class="search__form" action="">
+                        <input type="text" class="search__txt">
+                        <input type="submit" class="search__sbm" value="">
+                    </form>
+                    <a href="#" class="account__link">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.296 12.1672C19.2103 12.0797 19.1081 12.01 18.9952 11.9624C18.8824 11.9147 18.7612 11.89 18.6387 11.8897C18.5162 11.8893 18.3948 11.9134 18.2817 11.9604C18.1686 12.0075 18.066 12.0766 17.9799 12.1637C17.8937 12.2508 17.8258 12.3541 17.78 12.4677C17.7342 12.5814 17.7115 12.703 17.7132 12.8255C17.7149 12.9479 17.7409 13.0689 17.7898 13.1812C17.8387 13.2935 17.9095 13.395 17.998 13.4797C18.7811 14.2503 19.4024 15.1696 19.8255 16.1836C20.2486 17.1976 20.4648 18.2859 20.4616 19.3846C20.4616 20.5136 17.2254 22.1538 12.1539 22.1538C7.08241 22.1538 3.8462 20.5128 3.8462 19.3827C3.84309 18.2916 4.05645 17.2106 4.47392 16.2025C4.8914 15.1943 5.5047 14.279 6.27832 13.5095C6.36582 13.4242 6.43551 13.3223 6.48334 13.2099C6.53118 13.0974 6.55621 12.9766 6.55699 12.8544C6.55776 12.7322 6.53426 12.6111 6.48786 12.498C6.44145 12.385 6.37305 12.2822 6.28664 12.1958C6.20023 12.1094 6.09752 12.041 5.98447 11.9946C5.87142 11.9482 5.75028 11.9247 5.62808 11.9255C5.50588 11.9263 5.38505 11.9513 5.27259 11.9991C5.16014 12.047 5.05831 12.1167 4.973 12.2042C4.02723 13.145 3.27749 14.264 2.76718 15.4965C2.25687 16.7291 1.99612 18.0506 2.00004 19.3846C2.00004 22.3824 7.23112 24 12.1539 24C17.0767 24 22.3077 22.3824 22.3077 19.3846C22.3118 18.0416 22.0475 16.7113 21.5303 15.4719C21.0131 14.2325 20.2535 13.109 19.296 12.1672Z" fill="#3C3664"/>
+                        <path d="M12.1539 12.9231C13.4319 12.9231 14.6812 12.5441 15.7438 11.8341C16.8063 11.1241 17.6345 10.1149 18.1236 8.93425C18.6127 7.75356 18.7406 6.45437 18.4913 5.20095C18.242 3.94754 17.6266 2.7962 16.7229 1.89254C15.8192 0.98888 14.6679 0.373479 13.4145 0.124159C12.1611 -0.12516 10.8619 0.00279967 9.68119 0.491858C8.5005 0.980915 7.49135 1.80911 6.78135 2.8717C6.07134 3.93429 5.69238 5.18356 5.69238 6.46153C5.69436 8.17463 6.37576 9.817 7.58711 11.0283C8.79845 12.2397 10.4408 12.9211 12.1539 12.9231ZM12.1539 1.84615C13.0668 1.84615 13.9591 2.11684 14.7181 2.62399C15.4771 3.13113 16.0686 3.85195 16.418 4.6953C16.7673 5.53865 16.8587 6.46665 16.6806 7.36195C16.5025 8.25724 16.063 9.07963 15.4175 9.7251C14.772 10.3706 13.9496 10.8101 13.0543 10.9882C12.159 11.1663 11.231 11.0749 10.3877 10.7256C9.54434 10.3763 8.82351 9.78469 8.31637 9.0257C7.80922 8.2667 7.53854 7.37437 7.53854 6.46153C7.53998 5.2379 8.0267 4.0648 8.89194 3.19956C9.75718 2.33432 10.9303 1.8476 12.1539 1.84615Z" fill="#3C3664"/>
+                    </svg>
+                    </a>
+                    <div class="header__lang">
+                        <a href="#" class="lang__link active">Каз</a>
+                        <a href="№" class="lang__link">Рус</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="header__bg"></div>
+    <main class="main">
+        <section class="breadcrumbs">
+            <div class="container">
+                <div class="breadcrumbs__container">
+                    <ol class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a href="#" class="breadcrumbs__link">Главная</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a href="javascript:;" class="breadcrumbs__link">О нас</a>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="container">
+                <div class="about__container content">
+                    <div class="about__pretitle pre-title">знакомство</div>
+                    <div class="about__title title">о нас и нашем проекте</div>
+                    <div class="about__items">
+                        <div class="about__content">
+                            <div class="about__content-title">SENIMEN BOLASHAQ поможет встать на правильный путь</div>
+                            <div class="about__content-text">
+                                <p>Сonsectetur adipiscing elit. Adipiscing facilisi aenean sit porttitor dis. Urna quis tempor eget mattis tellus arcu, eu vulputate. Tortor rhoncus, viverra congue tellus libero suscipit fusce in ullamcorper. Congue eget
+                                    id vel neque. Ridiculus amet venenatis amet, et lectus. Nullam et vulputate tortor magnis cursus pulvinar tristique nisl. Id volutpat purus consectetur urna diam. </p>
+                                <P>Tortor rhoncus, viverra congue tellus libero suscipit fusce in ullamcorper. Congue eget id vel neque. Ridiculus amet venenatis amet, et lectus. Nullam et vulputate tortor magnis cursus pulvinar tristique nisl. Id volutpat
+                                    purus consectetur urna diam. Сonsectetur adipiscing elit. Adipiscing facilisi aenean sit porttitor dis. Urna quis tempor eget mattis tellus arcu, eu vulputate. Urna quis tempor eget mattis tellus arcu, eu vulputate.
+                                    Сonsectetur adipiscing elit. Adipiscing facilisi aenean sit porttitor dis. Urna quis tempor eget mattis tellus arcu, eu vulputate. Urna quis tempor eget mattis tellus arcu, eu vulputate.</P>
+                            </div>
+                        </div>
+                        <div class="about__img">
+                            <div class="about__img-items">
+                                <div class="about__img-item">
+                                    <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+                                        <path id="blob" fill="#FFDBAA">
+                                            <animate attributeName = "d"
+                                            dur="10000ms"
+                                            repeatCount="indefinite"
+                                            values="M423.45479,312.88915Q445.77063,375.7783,379.56288,382.17677Q313.35514,388.57525,270.71361,395.58847Q228.07208,402.60168,166.54063,410.3816Q105.00919,418.16151,101.42798,356.61224Q97.84677,295.06296,57.483,238.401Q17.11923,181.73903,74.30502,147.73859Q131.49081,113.73814,175.12706,72.98865Q218.7633,32.23917,265.44238,73.08614Q312.12145,113.93311,345.88776,140.07655Q379.65408,166.22,390.39651,208.11Q401.13894,250,423.45479,312.88915Z;
+                                            M428.177,307.83687Q430.13214,365.67374,373.9584,382Q317.78466,398.32626,271,413.15253Q224.21534,427.97879,157.9168,430.43719Q91.61827,432.89559,86.10441,366.2186Q80.59054,299.5416,78.43719,249.47553Q76.28384,199.40946,92.92332,143.97227Q109.56281,88.53508,168.44454,89.27406Q227.32626,90.01304,280.38173,79.05546Q333.43719,68.09789,372.23572,107.20882Q411.03425,146.31974,418.62805,198.15987Q426.22185,250,428.177,307.83687Z;
+                                            M401.5346,297.65265Q398.30393,345.30529,352.88195,360.45861Q307.45997,375.61194,265.61465,402.72863Q223.76934,429.84532,166.9247,420.45929Q110.08006,411.07327,75.61465,361.03731Q41.14925,311.00136,40.37856,249.53799Q39.60787,188.07463,90.53731,156.46337Q141.46676,124.85211,180.34803,81.4213Q219.22931,37.9905,282.30733,39.4559Q345.38535,40.9213,370.88331,98.53867Q396.38127,156.15604,400.57327,203.07802Q404.76526,250,401.5346,297.65265Z;
+                                            M397.49759,293.8756Q387.00161,337.75121,357.86917,379.86114Q328.73674,421.97107,278.61716,410.36837Q228.49759,398.76567,179.49518,393.01206Q130.49277,387.25844,117.47669,339.76005Q104.46062,292.26165,71.60109,240.25442Q38.74156,188.24719,86.8756,153.00402Q135.00964,117.76085,180.00241,97.36435Q224.99518,76.96785,269.13163,94.08903Q313.26808,111.21022,375.87078,119.98875Q438.47348,128.76728,423.23352,189.38364Q407.99357,250,397.49759,293.8756Z;
+                                            M392.79579,294.74084Q389.30891,339.48169,360.25916,383.12302Q331.2094,426.76434,278.53663,423.59951Q225.86386,420.43468,161.81929,423.13889Q97.77472,425.84311,112.97375,355.83517Q128.17277,285.82723,93.53144,239.98169Q58.89011,194.13614,109.6624,170.35348Q160.43468,146.57082,194.63095,124.2671Q228.82723,101.96337,281.95818,82.58363Q335.08914,63.2039,364.43712,110.45543Q393.7851,157.70697,395.03388,203.85348Q396.28266,250,392.79579,294.74084Z;
+                                            M423.45479,312.88915Q445.77063,375.7783,379.56288,382.17677Q313.35514,388.57525,270.71361,395.58847Q228.07208,402.60168,166.54063,410.3816Q105.00919,418.16151,101.42798,356.61224Q97.84677,295.06296,57.483,238.401Q17.11923,181.73903,74.30502,147.73859Q131.49081,113.73814,175.12706,72.98865Q218.7633,32.23917,265.44238,73.08614Q312.12145,113.93311,345.88776,140.07655Q379.65408,166.22,390.39651,208.11Q401.13894,250,423.45479,312.88915Z;">
+                                        </animate>
+                                        </path>
+                                      </svg>
+                                </div>
+                                <div class="about__img-item">
+                                    <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+                                        <defs>
+                                          <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                            <stop offset="0%" style="stop-color: rgb(60, 54, 100);"></stop>
+                                            <stop offset="100%" style="stop-color: rgb(4, 106, 201);"></stop>
+                                          </linearGradient>
+                                        </defs>
+                                        <path id="blob" d="M446.5,300.5Q407,351,375,402.5Q343,454,280.5,464Q218,474,155.5,452.5Q93,431,52,375.5Q11,320,20.5,252.5Q30,185,82,150.5Q134,116,176.5,76.5Q219,37,275.5,53.5Q332,70,383,101Q434,132,460,191Q486,250,446.5,300.5Z" fill="url(#gradient)">
+                                            <animate attributeName="d"
+                                            dur="10000ms"
+                                            repeatCount="indefinite"
+                                            values="M446.5,300.5Q407,351,375,402.5Q343,454,280.5,464Q218,474,155.5,452.5Q93,431,52,375.5Q11,320,20.5,252.5Q30,185,82,150.5Q134,116,176.5,76.5Q219,37,275.5,53.5Q332,70,383,101Q434,132,460,191Q486,250,446.5,300.5Z;
+                                            M441,300.5Q407,351,371.5,394.5Q336,438,279.5,437Q223,436,178,410.5Q133,385,106.5,342.5Q80,300,61.5,244.5Q43,189,85,148.5Q127,108,174,78.5Q221,49,273.5,66Q326,83,367.5,115.5Q409,148,442,199Q475,250,441,300.5Z;
+                                            M463.93918,308.32018Q432.02456,366.64035,380.36287,394.5Q328.70117,422.35965,273.7652,443.77749Q218.82924,465.19533,154.01813,450.12223Q89.20701,435.04913,67.92046,372.21667Q46.63391,309.38421,56.28655,252.84152Q65.93918,196.29883,78.22251,131.29561Q90.50584,66.29239,154.71023,48.78333Q218.91462,31.27427,271.93596,58.70117Q324.95731,86.12807,387.83246,103.50906Q450.70761,120.89006,473.28071,185.44503Q495.8538,250,463.93918,308.32018Z;
+                                            M444.75317,313.21338Q446.64014,376.42676,388.86275,401.79873Q331.08535,427.1707,275.56401,442.97866Q220.04268,458.78662,177.93888,420.34774Q135.83508,381.90886,102.3443,342.3264Q68.85352,302.74394,58.06401,246.76528Q47.2745,190.78662,89.96944,152.33219Q132.66437,113.87775,176.35352,76.06691Q220.04268,38.25606,275.12803,55.87197Q330.21338,73.48789,374.48789,107.64937Q418.76239,141.81085,430.81429,195.90542Q442.86619,250,444.75317,313.21338Z;
+                                            M446.5,300.5Q407,351,375,402.5Q343,454,280.5,464Q218,474,155.5,452.5Q93,431,52,375.5Q11,320,20.5,252.5Q30,185,82,150.5Q134,116,176.5,76.5Q219,37,275.5,53.5Q332,70,383,101Q434,132,460,191Q486,250,446.5,300.5Z">
+                                            </animate>
+                                        </path>
+                                      </svg>
+                                </div>
+                                <div class="about__img-item-first">
+                                    <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+                                        <defs>
+                                          <clipPath id="shape">
+                                            <path id="blob" fill="#d1d8e0">
+                                                <animate attributeName="d"
+                                                dur="10000ms"
+                                                repeatCount="indefinite"
+                                                values="M451.5,303.5Q436,357,403,407.5Q370,458,310,470Q250,482,191.5,467.5Q133,453,103.5,402Q74,351,46,300.5Q18,250,46,199Q74,148,111.5,112Q149,76,199.5,58Q250,40,306,48Q362,56,396.5,101Q431,146,449,198Q467,250,451.5,303.5Z;
+                                                M459.5,301Q427,352,391,392Q355,432,302.5,459.5Q250,487,189,474Q128,461,100,407Q72,353,52.5,301.5Q33,250,43,193.5Q53,137,98.5,101.5Q144,66,197,57Q250,48,303.5,56.5Q357,65,401.5,101Q446,137,469,193.5Q492,250,459.5,301Z;
+                                                M472.5,311.5Q464,373,412.5,407.5Q361,442,305.5,466.5Q250,491,191.5,472Q133,453,89.5,410.5Q46,368,44.5,309Q43,250,47.5,193Q52,136,95.5,96.5Q139,57,194.5,47Q250,37,307,44.5Q364,52,402,96Q440,140,460.5,195Q481,250,472.5,311.5Z;
+                                                M458.5,305.5Q443,361,397,392.5Q351,424,300.5,454Q250,484,198,457.5Q146,431,95.5,400Q45,369,32.5,309.5Q20,250,43.5,197Q67,144,100.5,96.5Q134,49,192,42.5Q250,36,310.5,38Q371,40,405,90.5Q439,141,456.5,195.5Q474,250,458.5,305.5Z;
+                                                M449,303.5Q436,357,400,402Q364,447,307,463.5Q250,480,198.5,454Q147,428,91,401Q35,374,23,312Q11,250,25,189Q39,128,89,93Q139,58,194.5,33.5Q250,9,305.5,33.5Q361,58,395.5,102Q430,146,446,198Q462,250,449,303.5Z;
+                                                M451.5,303.5Q436,357,403,407.5Q370,458,310,470Q250,482,191.5,467.5Q133,453,103.5,402Q74,351,46,300.5Q18,250,46,199Q74,148,111.5,112Q149,76,199.5,58Q250,40,306,48Q362,56,396.5,101Q431,146,449,198Q467,250,451.5,303.5Z;">
+                                                </animate>
+                                            </path>
+                                          </clipPath>
+                                        </defs>
+                                        <image x="0" y="0" width="100%" height="100%" clip-path="url(#shape)" xlink:href="img/about.jpg" preserveAspectRatio="none"></image>
+                                      </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pink">
+                <div class="pink-blur"></div>
+            </div>
+            <div class="orange">
+                <div class="orange-blur"></div>
+            </div>
+        </section>
+        <section class="internet">
+            <div class="container">
+                <div class="internet__container content">
+                    <div class="internet__pretitle pre-title">сми о нас</div>
+                    <div class="internet__title title">Что говорят в интернете?</div>
+                    <div class="internet__items">
+                        <div class="internet__tabs">
+                            <div class="internet__tab active">
+                                <div class="internet__tab-title">Johnson's Baby</div>
+                                <div class="internet__tab-text">бытовая химия</div>
+                            </div>
+                            <div class="internet__tab">
+                                <div class="internet__tab-title">Johnson's Baby</div>
+                                <div class="internet__tab-text">бытовая химия</div>
+                            </div>
+                            <div class="internet__tab">
+                                <div class="internet__tab-title">Johnson's Baby</div>
+                                <div class="internet__tab-text">бытовая химия</div>
+                            </div>
+                            <div class="internet__tab">
+                                <div class="internet__tab-title">Johnson's Baby</div>
+                                <div class="internet__tab-text">бытовая химия</div>
+                            </div>
+                            <div class="internet__tab">
+                                <div class="internet__tab-title">Johnson's Baby</div>
+                                <div class="internet__tab-text">бытовая химия</div>
+                            </div>
+                            <div class="internet__tab">
+                                <div class="internet__tab-title">Johnson's Baby</div>
+                                <div class="internet__tab-text">бытовая химия</div>
+                            </div>
+                            <div class="internet__tab">
+                                <div class="internet__tab-title">Johnson's Baby</div>
+                                <div class="internet__tab-text">бытовая химия</div>
+                            </div>
+                        </div>
+                        <div class="internet__content">
+                            <div class="internet__content-item active">
+                                <div class="internet__img">
+                                    <img src="img/chel.png" alt="">
+                                </div>
+                                <div class="internet__content-info">
+                                    <div class="internet__content-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                                    <div class="internet__content-text txt">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing facilisi aenean sit porttitor dis. Urna quis tempor eget mattis tellus arcu, eu vulputate. Tortor rhoncus, viverra congue tellus libero suscipit fusce in ullamcorper. Congue eget id vel
+                                            neque. Ridiculus amet venenatis amet, et lectus. Nullam et vulputate tortor magnis cursus pulvinar tristique nisl. Id volutpat purus consectetur urna diam.
+                                        </p>
+                                    </div>
+                                    <div class="internet__content-name">
+                                        <span class="name">
+                                            — Тычинин Владислав
+                                        </span>
+                                        <span class="position">
+                                            директор компании Johnson’s Baby
+                                        </span>
+                                    </div>
+                                    <div class="internet__content-link">
+                                        <a href="#" target="_blank" class="content-link red-btn">Читать в источнике</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="internet__content-item">
+                                <div class="internet__img">
+                                    <img src="img/chel.png" alt="">
+                                </div>
+                                <div class="internet__content-info">
+                                    <div class="internet__content-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                                    <div class="internet__content-text txt">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing facilisi aenean sit porttitor dis. Urna quis tempor eget mattis tellus arcu, eu vulputate. Tortor rhoncus, viverra congue tellus libero suscipit fusce in ullamcorper. Congue eget id vel
+                                            neque. Ridiculus amet venenatis amet, et lectus. Nullam et vulputate tortor magnis cursus pulvinar tristique nisl. Id volutpat purus consectetur urna diam.
+                                        </p>
+                                    </div>
+                                    <div class="internet__content-name">
+                                        <span class="name">
+                                            — Тычинин Владислав
+                                        </span>
+                                        <span class="position">
+                                            директор компании Johnson’s Baby
+                                        </span>
+                                    </div>
+                                    <div class="internet__content-link">
+                                        <a href="#" class="content-link red-btn">Читать в источнике</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="internet__content-item">
+                                <div class="internet__img">
+                                    <img src="img/chel.png" alt="">
+                                </div>
+                                <div class="internet__content-info">
+                                    <div class="internet__content-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                                    <div class="internet__content-text txt">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing facilisi aenean sit porttitor dis. Urna quis tempor eget mattis tellus arcu, eu vulputate. Tortor rhoncus, viverra congue tellus libero suscipit fusce in ullamcorper. Congue eget id vel
+                                            neque. Ridiculus amet venenatis amet, et lectus. Nullam et vulputate tortor magnis cursus pulvinar tristique nisl. Id volutpat purus consectetur urna diam.
+                                        </p>
+                                    </div>
+                                    <div class="internet__content-name">
+                                        <span class="name">
+                                            — Тычинин Владислав
+                                        </span>
+                                        <span class="position">
+                                            директор компании Johnson’s Baby
+                                        </span>
+                                    </div>
+                                    <div class="internet__content-link">
+                                        <a href="#" class="content-link red-btn">Читать в источнике</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="internet__content-item">
+                                <div class="internet__img">
+                                    <img src="img/chel.png" alt="">
+                                </div>
+                                <div class="internet__content-info">
+                                    <div class="internet__content-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                                    <div class="internet__content-text txt">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing facilisi aenean sit porttitor dis. Urna quis tempor eget mattis tellus arcu, eu vulputate. Tortor rhoncus, viverra congue tellus libero suscipit fusce in ullamcorper. Congue eget id vel
+                                            neque. Ridiculus amet venenatis amet, et lectus. Nullam et vulputate tortor magnis cursus pulvinar tristique nisl. Id volutpat purus consectetur urna diam.
+                                        </p>
+                                    </div>
+                                    <div class="internet__content-name">
+                                        <span class="name">
+                                            — Тычинин Владислав
+                                        </span>
+                                        <span class="position">
+                                            директор компании Johnson’s Baby
+                                        </span>
+                                    </div>
+                                    <div class="internet__content-link">
+                                        <a href="#" class="content-link red-btn">Читать в источнике</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="partners">
+            <div class="container">
+                <div class="partners__container content">
+                    <div class="partners__pretitle pre-title">Партнёры</div>
+                    <div class="partners__title title">Гордимся, что работаем с</div>
+                    <div class="partners__items">
+                        <div class="partners__item">
+                            <div><img src="img/jhon.png" alt=""></div>
+                        </div>
+                        <div class="partners__item">
+                            <div><img src="img/nest.png" alt=""></div>
+                        </div>
+                        <div class="partners__item">
+                            <div><img src="img/hug.png" alt=""></div>
+                        </div>
+                        <div class="partners__item">
+                            <div><img src="img/jhon.png" alt=""></div>
+                        </div>
+                        <div class="partners__item">
+                            <div><img src="img/nest.png" alt=""></div>
+                        </div>
+                        <div class="partners__item">
+                            <div><img src="img/hug.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="pink">
+                        <div class="pink-blur"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="actual">
+            <div class="container">
+                <div class="actual__container content">
+                    <div class="actual__pretitle pre-title">Блог учредителя</div>
+                    <div class="actual__title title">читайте актуальные новости</div>
+                    <div class="news__items">
+                        <div class="news__item w-24">
+                            <a href="#" class="news__img"><img src="img/news.jpg" alt=""></a>
+                            <div class="news__date">
+                                <span>23 декабря 2021</span>
+                                <a href="" class="news__hashtag">#НаЗаметку</a>
+                            </div>
+                            <a href="#" class="news__title">Как правильно пеленать ребёнка?</a>
+                            <div class="news__btn">
+                                <a href="#" class="news__link">Узнать больше</a>
+                                <a href="#" class="news__share">
+                                    <div class="ya-share2" data-curtain data-shape="round" data-limit="0" data-more-button-type="short" data-services="vkontakte,odnoklassniki,telegram,whatsapp"></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="news__item w-24">
+                            <a href="#" class="news__img"><img src="img/news.jpg" alt=""></a>
+                            <div class="news__date">
+                                <span>23 декабря 2021</span>
+                                <a href="" class="news__hashtag">#НаЗаметку</a>
+                            </div>
+                            <a href="#" class="news__title">Как правильно пеленать ребёнка?</a>
+                            <div class="news__btn">
+                                <a href="#" class="news__link">Узнать больше</a>
+                                <a href="#" class="news__share">
+                                    <div class="ya-share2" data-curtain data-shape="round" data-limit="0" data-more-button-type="short" data-services="vkontakte,odnoklassniki,telegram,whatsapp"></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="news__item w-24">
+                            <a href="#" class="news__img"><img src="img/news.jpg" alt=""></a>
+                            <div class="news__date">
+                                <span>23 декабря 2021</span>
+                                <a href="" class="news__hashtag">#НаЗаметку</a>
+                            </div>
+                            <a href="#" class="news__title">Как правильно пеленать ребёнка?</a>
+                            <div class="news__btn">
+                                <a href="#" class="news__link">Узнать больше</a>
+                                <a href="#" class="news__share">
+                                    <div class="ya-share2" data-curtain data-shape="round" data-limit="0" data-more-button-type="short" data-services="vkontakte,odnoklassniki,telegram,whatsapp"></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="news__item w-24">
+                            <a href="#" class="news__img"><img src="img/news.jpg" alt=""></a>
+                            <div class="news__date">
+                                <span>23 декабря 2021</span>
+                                <a href="" class="news__hashtag">#НаЗаметку</a>
+                            </div>
+                            <a href="#" class="news__title">Как правильно пеленать ребёнка?</a>
+                            <div class="news__btn">
+                                <a href="#" class="news__link">Узнать больше</a>
+                                <a href="#" class="news__share">
+                                    <div class="ya-share2" data-curtain data-shape="round" data-limit="0" data-more-button-type="short" data-services="vkontakte,odnoklassniki,telegram,whatsapp"></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="news__item w-24">
+                            <a href="#" class="news__img"><img src="img/news.jpg" alt=""></a>
+                            <div class="news__date">
+                                <span>23 декабря 2021</span>
+                                <a href="" class="news__hashtag">#НаЗаметку</a>
+                            </div>
+                            <a href="#" class="news__title">Как правильно пеленать ребёнка?</a>
+                            <div class="news__btn">
+                                <a href="#" class="news__link">Узнать больше</a>
+                                <a href="#" class="news__share">
+                                    <div class="ya-share2" data-curtain data-shape="round" data-limit="0" data-more-button-type="short" data-services="vkontakte,odnoklassniki,telegram,whatsapp"></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="news__item w-24">
+                            <a href="#" class="news__img"><img src="img/news.jpg" alt=""></a>
+                            <div class="news__date">
+                                <span>23 декабря 2021</span>
+                                <a href="" class="news__hashtag">#НаЗаметку</a>
+                            </div>
+                            <a href="#" class="news__title">как правильно пеленать ребёнка?</a>
+                            <div class="news__btn">
+                                <a href="#" class="news__link">Узнать больше</a>
+                                <a href="#" class="news__share">
+                                    <div class="ya-share2" data-curtain data-shape="round" data-limit="0" data-more-button-type="short" data-services="vkontakte,odnoklassniki,telegram,whatsapp"></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="news__item w-24">
+                            <a href="#" class="news__img"><img src="img/news.jpg" alt=""></a>
+                            <div class="news__date">
+                                <span>23 декабря 2021</span>
+                                <a href="" class="news__hashtag">#НаЗаметку</a>
+                            </div>
+                            <a href="#" class="news__title">как правильно пеленать ребёнка?</a>
+                            <div class="news__btn">
+                                <a href="#" class="news__link">Узнать больше</a>
+                                <a href="#" class="news__share">
+                                    <div class="ya-share2" data-curtain data-shape="round" data-limit="0" data-more-button-type="short" data-services="vkontakte,odnoklassniki,telegram,whatsapp"></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="news__item w-24">
+                            <a href="#" class="news__img"><img src="img/news.jpg" alt=""></a>
+                            <div class="news__date">
+                                <span>23 декабря 2021</span>
+                                <a href="" class="news__hashtag">#НаЗаметку</a>
+                            </div>
+                            <a href="#" class="news__title">как правильно пеленать ребёнка?</a>
+                            <div class="news__btn">
+                                <a href="#" class="news__link">Узнать больше</a>
+                                <a href="#" class="news__share">
+                                    <div class="ya-share2" data-curtain data-shape="round" data-limit="0" data-more-button-type="short" data-services="vkontakte,odnoklassniki,telegram,whatsapp"></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news__more">
+                        <a href="#" class="news__more-link white-btn">Смотреть все</a>
+                    </div>
+                    <div class="orange">
+                        <div class="orange-blur"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="actual-blob">
+                <img src="img/actual-blob.png" alt="">
+            </div>
+        </section>
+        <section class="feedback">
+            <div class="container">
+                <div class="feedback__container content">
+                    <div class="feedback__form-block">
+                        <div class="feedback__pretitle pre-title">Обратная связь</div>
+                        <div class="feedback__title title">Мы вам перезвоним</div>
+                        <form action="" class="feedback__form">
+                            <div class="feedback__form-row">
+                                <input type="text" class="feedback__input" placeholder="Фамилия Имя*" required>
+                                <input type="tel" class="feedback__input" placeholder="Номер телефона*" required>
+                            </div>
+                            <div class="feedback__form-row">
+                                <input type="email" class="feedback__input" placeholder="E-mail*" required>
+                                <input type="text" class="feedback__input" placeholder="Добавьте комментарий">
+                            </div>
+                            <div class="feedback__form-row">
+                                <label for="feedback-submit" class="red-btn feedback__btn">
+                                    <span>Хочу на курс</span>
+                                    <input type="submit" class="feedback__submit" value="Хочу на курс" id="feedback-submit">
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="feedback__blob">
+                <img src="img/feedbackblob.png" alt="">
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__container">
+                <div class="footer__top">
+                    <a href="#" class="footer__logo logo">
+                        <img src="img/svg/logo.svg" alt="">
+                    </a>
+                    <div class="footer__contacts">
+                        <div class="footer__contacts-item">
+                            <img src="img/svg/footemail.svg" alt="">
+                            <a href="email:senimenbolahsaq@gmail.com" class="foot__email">senimenbolahsaq@gmail.com</a>
+                        </div>
+                        <div class="footer__contacts-item">
+                            <img src="img/svg/footlocal.svg" alt="">
+                            <span class="foot__street">Нур-Султан, <br>
+                                ул. Кунаева 2, БЦ “ССС”</span>
+                        </div>
+                        <div class="footer__contacts-item">
+                            <img src="img/svg/footcall.svg" alt="">
+                            <div class="foot__tels">
+                                <a href="tel:8 702 953 20 20" class="foot__tel">8 702 953 20 20</a>
+                                <a href="tel:8 771 571 74 75" class="foot__tel">8 771 571 74 75</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__center">
+                    <div class="footer__about">
+                        <div class="footer__title">О проекте</div>
+                        <div class="footer__text txt">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing facilisi aenean sit porttitor dis. Urna quis tempor eget mattis tellus arcu, eu vulputate. Tortor rhoncus, viverra congue tellus libero suscipit fusce in ullamcorper.
+                                Congue eget id vel neque.</p>
+                        </div>
+                    </div>
+                    <div class="footer__nav">
+                        <div class="footer__title">Быстрые ссылки</div>
+                        <ul class="footer__list">
+                            <li class="footer__list-item"><a href="#" class="footer__list-link">Главная</a></li>
+                            <li class="footer__list-item"><a href="#" class="footer__list-link">О нас</a></li>
+                            <li class="footer__list-item"><a href="#" class="footer__list-link">Новости</a></li>
+                            <li class="footer__list-item"><a href="#" class="footer__list-link">Курсы</a></li>
+                            <li class="footer__list-item"><a href="#" class="footer__list-link">О членстве в РОО</a></li>
+                            <li class="footer__list-item"><a href="#" class="footer__list-link">Наша команда</a></li>
+                            <li class="footer__list-item"><a href="#" class="footer__list-link">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__links-pages">
+                        <div class="footer__title">Наши страницы</div>
+                        <a href="#" target="_blank" class="footer__links-item pink-hover">
+                            <img src="img/svg/instfoot.svg" alt=""> @senimem.bolashaq
+                        </a>
+                        <a href="#" target="_blank" class="footer__links-item pink-hover">
+                            <img src="img/svg/whatfoot.svg" alt=""> 8 702 953 20 20
+                        </a>
+                        <a href="#" target="_blank" class="footer__links-item pink-hover">
+                            <img src="img/svg/telegfoot.svg" alt=""> @senimem.bolashaq
+                        </a>
+                        <form action="" class="mailing">
+                            <span>Подпишитесь на рассылку</span>
+                            <div class="mailing__box">
+                                <input type="email" class="mailing-email" placeholder="Введите свой E-Mail" required>
+                                <label for="mailing-sbm" class="mailing-sbm red-btn">
+                                    <span>Подписаться</span>
+                                    <input type="submit" class="mailinig-submit" id="mailing-sbm">
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bot">
+                <div class="footer__copy">Copyright © 2021 All rights reserved</div>
+                <a href="https://astanacreative.kz/" target="_blank" class="footer__ast pink-hover">Сайт разработан AstanaCreative</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="https://yastatic.net/share2/share.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
