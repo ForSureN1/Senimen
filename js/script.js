@@ -88,4 +88,64 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     }
 
+    //UP footer
+    let up = document.querySelector('.up')
+    if (up) {
+        up.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+            })
+        })
+    }
+
+    let formAppSbm = document.querySelector('.application-submit')
+    let formApp = document.querySelector('.form-application')
+    if (formAppSbm) {
+        formAppSbm.addEventListener('click', validate)
+        formApp.addEventListener('input', checkValidate)
+    }
+
+    function checkValidate(e) {
+        let errField = e.target.parentNode.querySelector('.reqField')
+        errField.classList.remove('active')
+    }
+
+    function validate(e) {
+
+        // get all the inputs that have the validate class in it
+        // this requires the input to have a class name valled validate
+        let validateElements = document.querySelectorAll('.js-required');
+
+
+        // Get all the inputs 
+        // This code is required because the output from 'document.getElementsByClassName' is not fit to the current needs
+        // console.log("validateElements",validateElements); // Uncomment this line if you want to see what i mean
+        let inputs = Array.prototype.filter.call(validateElements, function(element) {
+            return element.nodeName === 'INPUT';
+        });
+
+        // Loop through the inputs to be validated
+
+        for (let i = 0; i < inputs.length; i++) {
+            let input = inputs[i];
+            if (input.value.length == 0) {
+                // generic placeholder
+                // error class 
+                input.classList.add("err");
+                // focus on the input [ optional ]
+                input.focus();
+                // break the loop [ optional ]
+                // e.target.nextElementSibling.classList.add('active')
+                console.log(input.nextElementSibling)
+                input.nextElementSibling.classList.add('active')
+                console.log(input.parentNode)
+                e.preventDefault();
+                break;
+            }
+        }
+
+    }
+
+
 })
