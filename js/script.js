@@ -101,18 +101,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let formAppSbm = document.querySelector('.application-submit')
     let formApp = document.querySelector('.form-application')
+    let validateSelect = document.querySelector('.js-select-application')
     if (formAppSbm) {
         formAppSbm.addEventListener('click', validate)
         formApp.addEventListener('input', checkValidate)
+        validateSelect.addEventListener('input', () => {
+            if (validateSelect.classList.contains('err')) {
+                validateSelect.classList.remove('err')
+            }
+        })
     }
 
     function checkValidate(e) {
         let errField = e.target.parentNode.querySelector('.reqField')
-        errField.classList.remove('active')
+        if (errField) {
+            errField.classList.remove('active')
+        }
     }
 
     function validate(e) {
-
         // get all the inputs that have the validate class in it
         // this requires the input to have a class name valled validate
         let validateElements = document.querySelectorAll('.js-required');
@@ -137,12 +144,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 input.focus();
                 // break the loop [ optional ]
                 // e.target.nextElementSibling.classList.add('active')
-                console.log(input.nextElementSibling)
+                // console.log(input.nextElementSibling)
                 input.nextElementSibling.classList.add('active')
-                console.log(input.parentNode)
+                    // console.log(input.parentNode)
                 e.preventDefault();
                 break;
             }
+        }
+        if (validateSelect.value == "disabled") {
+            validateSelect.classList.add("err");
+            // console.log(validateSelect.value)
+            e.preventDefault();
         }
 
     }

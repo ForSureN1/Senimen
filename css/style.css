@@ -1919,6 +1919,10 @@ ul.slick-dots li.slick-active button {
     cursor: pointer;
 }
 
+.application-select.err {
+    border-color: #FF4E59;
+}
+
 .application-label {
     position: relative;
     display: flex;
@@ -2038,6 +2042,7 @@ ul.slick-dots li.slick-active button {
     position: absolute;
     top: 0;
     left: 0;
+    z-index: -1;
 }
 
 .reqField {
@@ -2054,10 +2059,37 @@ ul.slick-dots li.slick-active button {
     color: #ff0000;
 }
 
-.reqField.active svg {
+.reqField.active img {
     margin-right: 10px;
 }
 
 .application__form-col {
     position: relative;
+}
+
+.application {
+    position: relative;
+}
+
+.application-blob {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.application .orange {
+    top: auto;
+    bottom: 0;
+}
+
+.application .pink {
+    left: 0;
+    top: 10%;
+    width: 300px;
+    height: 500px;
+}
+
+.application .free-blob {
+    top: 0;
+    left: -55%;
 }
