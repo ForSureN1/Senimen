@@ -2093,3 +2093,147 @@ ul.slick-dots li.slick-active button {
     top: 0;
     left: -55%;
 }
+
+.thank__items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.thank__content {
+    width: 100%;
+}
+
+.thank__content-pretitle {
+    font-weight: 500;
+    font-size: 25px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.thank__content-title {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.thank__content-text {
+    margin-bottom: 30px;
+}
+
+.thank__content-items {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    column-gap: 2%;
+    row-gap: 20px;
+    -moz-column-gap: 2%;
+    -moz-row-gap: 20px;
+    -webkit-column-gap: 2%;
+    -webkit-row-gap: 20px;
+}
+
+.thank__content-item {
+    width: 32%;
+    display: flex;
+    align-items: center;
+}
+
+.thank__content-item img {
+    margin-right: 10px;
+}
+
+.thank__content-link {
+    margin-top: 30px;
+    padding: 17px 35px;
+}
+
+.red-btn:active {
+    background: linear-gradient(95.39deg, #FF5FC8 -35.36%, #FF7A7A 91.89%);
+}
+
+.thank__video {
+    margin-left: 40px;
+    width: 750px;
+    height: 422px;
+    flex-shrink: 0;
+}
+
+.thank__video-item {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+}
+
+.autoplay {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.autoplay svg {
+    width: 100%;
+    height: 100%;
+}
+
+.rotate-two {
+    animation: rolling-two 5s linear infinite;
+    transform-origin: center;
+}
+
+.rotate-one {
+    animation: rolling-one 5s linear infinite;
+    transform-origin: center;
+}
+
+@keyframes rolling-one {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rolling-two {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.thank__container {
+    position: relative;
+}
+
+.thank__container .pink {
+    top: 5%;
+    left: -10%;
+    height: 600px;
+    width: 300px;
+}
+
+.free__item-text {
+    padding: 0 50px;
+    text-align: center;
+    margin-bottom: 30px;
+    transition: .3s ease-in-out;
+    z-index: 1;
+}
+
+.free__item:hover .free__item-text {
+    color: #ffffff;
+}
+
+.free.other .orange {
+    left: auto;
+    right: 0;
+    top: auto;
+    bottom: 0;
+    transform: unset;
+}
