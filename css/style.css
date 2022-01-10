@@ -354,7 +354,7 @@
     margin-bottom: 15px;
     text-transform: uppercase;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 600;
     text-align: center;
 }
 
@@ -2236,4 +2236,305 @@ ul.slick-dots li.slick-active button {
     top: auto;
     bottom: 0;
     transform: unset;
+}
+
+.lesson__left {
+    width: 60%;
+}
+
+.lesson__box {
+    display: none;
+    flex-direction: column;
+    background: #FFFFFF;
+    box-shadow: 4px 4px 30px rgba(1, 122, 149, 0.15);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.lesson__box.active {
+    display: flex;
+    animation: showBlock 1s linear forwards;
+}
+
+.lesson__video {
+    position: relative;
+    cursor: pointer;
+    max-height: 480px;
+    min-height: 300px;
+    width: 100%;
+}
+
+.lesson__video img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.lesson__box-wrapper {
+    padding: 30px 50px 40px 30px;
+}
+
+.lesson__box-pretitle {
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.lesson__box-title {
+    font-weight: 800;
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+
+.lesson__box-top-elems,
+.lesson__box-bot-elems {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    -moz-column-gap: 30px;
+    -webkit-column-gap: 30px;
+    margin-bottom: 30px;
+}
+
+.lesson__box-bot-elems {
+    margin-bottom: 0;
+}
+
+.lesson__box-tag {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.lesson__box-name {
+    padding: 6px 40px;
+    border: 1px solid #3C3664;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.condition-view {
+    display: flex;
+    align-items: center;
+}
+
+.condition-view img {
+    margin-right: 15px;
+}
+
+.condition-viewed {
+    color: #1BB821;
+    font-weight: 500;
+}
+
+.condition-notviewed {
+    display: none;
+}
+
+.lesson__box-text {
+    margin-bottom: 40px;
+}
+
+.lesson__box-text p:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.lesson__box-price,
+.lesson__box-time {
+    display: flex;
+    align-items: center;
+    padding: 10px 25px;
+    background: #D3CFFF;
+    border-radius: 30px;
+    font-weight: 800;
+    font-size: 30px;
+    color: #6A5DED;
+}
+
+.lesson__box-time {
+    background: #FFECC4;
+    color: #EDBC5D;
+}
+
+.lesson__box-price img,
+.lesson__box-time img {
+    margin-left: 10px;
+}
+
+.lessson__box-access {
+    font-weight: 700;
+    font-size: 20px;
+    color: #6A5DED;
+    text-transform: uppercase;
+}
+
+.lesson__items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lesson__right {
+    width: 35%;
+}
+
+.lesson__training,
+.lesson__notes {
+    width: 100%;
+    padding: 30px;
+    background: #FFFFFF;
+    box-shadow: 4px 4px 30px rgba(1, 122, 149, 0.15);
+    border-radius: 15px;
+}
+
+.lesson__training-title,
+.lesson__notes-title {
+    display: flex;
+    align-items: center;
+    font-weight: 800;
+    font-size: 22px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.lesson__training-title img,
+.lesson__notes-title img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    -o-object-fit: contain;
+    margin-right: 22px;
+}
+
+.lesson__training-pretitle,
+.lesson__notes-pretitle {
+    font-weight: 500;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-size: 22px;
+    padding-left: 62px;
+}
+
+.training-list__item,
+.lesson__list-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    font-size: 22px;
+}
+
+.training-list__item {
+    cursor: pointer;
+    transition: .2s linear;
+    font-weight: 800;
+}
+
+.training-list__item:last-child,
+.lesson__list-item:last-child {
+    margin-bottom: 0;
+}
+
+.training-list__item span,
+.lesson__list-item span {
+    margin-right: 22px;
+    width: 40px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: #3C3664;
+}
+
+.training-viewed {
+    display: none;
+}
+
+.training-list__item.active {
+    color: #ef2835
+}
+
+.training-list__item:hover {
+    color: #ef2835;
+}
+
+.training-list__item.viewed .training-viewed {
+    display: block;
+}
+
+.training-viewed img {
+    margin: 0 auto;
+    max-width: 40px;
+}
+
+.training-list__item.viewed .training-notviewed {
+    display: none;
+}
+
+.lesson__notes {
+    margin-top: 50px;
+}
+
+.lesson__list-link {
+    color: #ef2835;
+    text-decoration: underline;
+}
+
+.lesson {
+    position: relative;
+}
+
+.lesson .orange {
+    top: auto;
+    bottom: -30%;
+}
+
+.lesson .pink {
+    top: 0;
+    left: 3%;
+}
+
+.news__tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.news__tab-link:first-child {
+    margin-right: 30px;
+}
+
+.news__tab-link.active {
+    pointer-events: none;
+}
+
+.news__tab-link.active .orange-btn {
+    opacity: 1;
+}
+
+.news__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.news__left {
+    width: 75%;
+}
+
+.news__sidebar {
+    width: 25%;
+    flex-shrink: 0;
+    margin-left: 80px;
+}
+
+.news__slider-item {
+    max-height: 480px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.news__slider-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    -o-object-fit: cover;
 }

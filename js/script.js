@@ -7,6 +7,18 @@ $('.slider__items').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
 })
+
+$('.news__slider').slick({
+    autoplay: true,
+    arrows: true,
+    fade: true,
+    Infinity: true,
+    dots: true,
+    speed: 1500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+})
+
 document.addEventListener('DOMContentLoaded', () => {
 
     //search header
@@ -158,6 +170,45 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
     }
+
+
+    //Tabs lessons
+
+    //Tabs internet
+    let lesson = document.querySelector('.lesson__training-list')
+
+    if (lesson) {
+        lessonTabs();
+        lessonItemTabs();
+    }
+
+    function lessonTabs() {
+        let btn = document.querySelectorAll('.training-list__item');
+        let block = document.querySelectorAll('.lesson__box')
+        btn.forEach((key, index, array) => {
+            key.addEventListener('click', function() {
+                block.forEach((item, itemindex) => {
+                    item.classList.toggle('active', index === itemindex)
+                })
+            })
+        })
+    }
+
+    function lessonItemTabs() {
+        let list = document.querySelector('.lesson__training-list')
+        let items = document.querySelectorAll('.training-list__item')
+        list.addEventListener('click', (e) => {
+            const target = e.target
+            if (target.classList.contains('training-list__item')) {
+                // console.log(target)
+                items.forEach(item => {
+                    item.classList.remove('active')
+                })
+            }
+            target.classList.add('active')
+        })
+    }
+
 
 
 })
