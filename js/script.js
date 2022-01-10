@@ -17,6 +17,8 @@ $('.news__slider').slick({
     speed: 1500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    prevArrow: '<button type="button" class="slick_arrow slick_prev"><svg width="11" height="19" viewBox="0 0 11 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d = "M10 1L1 9.5L10 18"stroke = "white"stroke - linecap = "round"stroke - linejoin = "round" / ></svg></button>',
+    nextArrow: '<button type="button" class="slick_arrow slick_next"><svg width="11" height="19" viewBox="0 0 11 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L10 9.5L1 18" stroke="white" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
 })
 
 document.addEventListener('DOMContentLoaded', () => {

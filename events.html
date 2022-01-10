@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__items">
+                <a href="#" class="header__logo logo">
+                    <img src="img/svg/logo.svg" alt="Senimen">
+                </a>
+                <nav class="menu">
+                    <ul class="nav__menu">
+                        <li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
+                        <li class="nav__item">
+                            <a href="javascript:;" class="nav__link js-slide">О компании <img src="img/svg/navarrow.svg" alt=""></a>
+                            <div class="nav__under">
+                                <a href="#" class="nav__link">О нас</a>
+                                <a href="#" class="nav__link">Наша Команда</a>
+                            </div>
+                        </li>
+                        <li class="nav__item"><a href="#" class="nav__link">Актуальные новости</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Мероприятия</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Курсы</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">О членстве в РОО</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="header__elems">
+                    <form method="" class="search__form" action="">
+                        <input type="text" class="search__txt">
+                        <input type="submit" class="search__sbm" value="">
+                    </form>
+                    <a href="#" class="account__link">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.296 12.1672C19.2103 12.0797 19.1081 12.01 18.9952 11.9624C18.8824 11.9147 18.7612 11.89 18.6387 11.8897C18.5162 11.8893 18.3948 11.9134 18.2817 11.9604C18.1686 12.0075 18.066 12.0766 17.9799 12.1637C17.8937 12.2508 17.8258 12.3541 17.78 12.4677C17.7342 12.5814 17.7115 12.703 17.7132 12.8255C17.7149 12.9479 17.7409 13.0689 17.7898 13.1812C17.8387 13.2935 17.9095 13.395 17.998 13.4797C18.7811 14.2503 19.4024 15.1696 19.8255 16.1836C20.2486 17.1976 20.4648 18.2859 20.4616 19.3846C20.4616 20.5136 17.2254 22.1538 12.1539 22.1538C7.08241 22.1538 3.8462 20.5128 3.8462 19.3827C3.84309 18.2916 4.05645 17.2106 4.47392 16.2025C4.8914 15.1943 5.5047 14.279 6.27832 13.5095C6.36582 13.4242 6.43551 13.3223 6.48334 13.2099C6.53118 13.0974 6.55621 12.9766 6.55699 12.8544C6.55776 12.7322 6.53426 12.6111 6.48786 12.498C6.44145 12.385 6.37305 12.2822 6.28664 12.1958C6.20023 12.1094 6.09752 12.041 5.98447 11.9946C5.87142 11.9482 5.75028 11.9247 5.62808 11.9255C5.50588 11.9263 5.38505 11.9513 5.27259 11.9991C5.16014 12.047 5.05831 12.1167 4.973 12.2042C4.02723 13.145 3.27749 14.264 2.76718 15.4965C2.25687 16.7291 1.99612 18.0506 2.00004 19.3846C2.00004 22.3824 7.23112 24 12.1539 24C17.0767 24 22.3077 22.3824 22.3077 19.3846C22.3118 18.0416 22.0475 16.7113 21.5303 15.4719C21.0131 14.2325 20.2535 13.109 19.296 12.1672Z" fill="#3C3664"/>
+                        <path d="M12.1539 12.9231C13.4319 12.9231 14.6812 12.5441 15.7438 11.8341C16.8063 11.1241 17.6345 10.1149 18.1236 8.93425C18.6127 7.75356 18.7406 6.45437 18.4913 5.20095C18.242 3.94754 17.6266 2.7962 16.7229 1.89254C15.8192 0.98888 14.6679 0.373479 13.4145 0.124159C12.1611 -0.12516 10.8619 0.00279967 9.68119 0.491858C8.5005 0.980915 7.49135 1.80911 6.78135 2.8717C6.07134 3.93429 5.69238 5.18356 5.69238 6.46153C5.69436 8.17463 6.37576 9.817 7.58711 11.0283C8.79845 12.2397 10.4408 12.9211 12.1539 12.9231ZM12.1539 1.84615C13.0668 1.84615 13.9591 2.11684 14.7181 2.62399C15.4771 3.13113 16.0686 3.85195 16.418 4.6953C16.7673 5.53865 16.8587 6.46665 16.6806 7.36195C16.5025 8.25724 16.063 9.07963 15.4175 9.7251C14.772 10.3706 13.9496 10.8101 13.0543 10.9882C12.159 11.1663 11.231 11.0749 10.3877 10.7256C9.54434 10.3763 8.82351 9.78469 8.31637 9.0257C7.80922 8.2667 7.53854 7.37437 7.53854 6.46153C7.53998 5.2379 8.0267 4.0648 8.89194 3.19956C9.75718 2.33432 10.9303 1.8476 12.1539 1.84615Z" fill="#3C3664"/>
+                    </svg>
+                    </a>
+                    <div class="header__lang">
+                        <a href="#" class="lang__link active">Каз</a>
+                        <a href="№" class="lang__link">Рус</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="header__bg"></div>
+    <main class="main">
+        <section class="breadcrumbs">
+            <div class="container">
+                <div class="breadcrumbs__container">
+                    <ol class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a href="#" class="breadcrumbs__link">Главная</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a href="javascript:;" class="breadcrumbs__link">Мероприятия</a>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        <section class="events">
+            <div class="container">
+                <div class="events__container content">
+                    <div class="events__title title">события и мероприятия</div>
+                    <div class="events__items">
+                        <a href="#" class="event__item">
+                            <img src="img/even.jpg" alt="">
+                            <div class="event__info">
+                                <span class="event__date">23 декабря 2021</span>
+                                <div class="event__title">Lorem ipsum dolor sit amet.</div>
+                            </div>
+                        </a>
+                        <a href="#" class="event__item">
+                            <img src="img/even.jpg" alt="">
+                            <div class="event__info">
+                                <span class="event__date">23 декабря 2021</span>
+                                <div class="event__title">Lorem ipsum dolor sit amet.</div>
+                            </div>
+                        </a>
+                        <a href="#" class="event__item">
+                            <img src="img/even.jpg" alt="">
+                            <div class="event__info">
+                                <span class="event__date">23 декабря 2021</span>
+                                <div class="event__title">Lorem ipsum dolor sit amet.</div>
+                            </div>
+                        </a>
+                        <a href="#" class="event__item">
+                            <img src="img/even.jpg" alt="">
+                            <div class="event__info">
+                                <span class="event__date">23 декабря 2021</span>
+                                <div class="event__title">Lorem ipsum dolor sit amet.</div>
+                            </div>
+                        </a>
+                        <a href="#" class="event__item">
+                            <img src="img/even.jpg" alt="">
+                            <div class="event__info">
+                                <span class="event__date">23 декабря 2021</span>
+                                <div class="event__title">Lorem ipsum dolor sit amet.</div>
+                            </div>
+                        </a>
+                        <a href="#" class="event__item">
+                            <img src="img/even.jpg" alt="">
+                            <div class="event__info">
+                                <span class="event__date">23 декабря 2021</span>
+                                <div class="event__title">Lorem ipsum dolor sit amet.</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="pagination">
+                        <ul class="pagination__items">
+                            <li class="prev">
+                                <a rel="next" href="#"><img src="img/svg/paggleft.svg" alt=""></a>
+                            </li>
+                            <li><a href="#">1</a></li>
+                            <li class="active"><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li class="next">
+                                <a rel="next" href="#"><img src="img/svg/paggright.svg" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="feedback">
+            <div class="container">
+                <div class="feedback__container content">
+                    <div class="feedback__form-block">
+                        <div class="feedback__pretitle pre-title">Обратная связь</div>
+                        <div class="feedback__title title">Мы вам перезвоним</div>
+                        <form action="" class="feedback__form">
+                            <div class="feedback__form-row">
+                                <input type="text" class="feedback__input" placeholder="Фамилия Имя*" required>
+                                <input type="tel" class="feedback__input" placeholder="Номер телефона*" required>
+                            </div>
+                            <div class="feedback__form-row">
+                                <input type="email" class="feedback__input" placeholder="E-mail*" required>
+                                <input type="text" class="feedback__input" placeholder="Добавьте комментарий">
+                            </div>
+                            <div class="feedback__form-row">
+                                <label for="feedback-submit" class="red-btn feedback__btn">
+                                    <span>Хочу на курс</span>
+                                    <input type="submit" class="feedback__submit" value="Хочу на курс" id="feedback-submit">
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="feedback__blob">
+                <img src="img/feedbackblob.png" alt="">
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__container">
+                <div class="footer__top">
+                    <a href="#" class="footer__logo logo">
+                        <img src="img/svg/logo.svg" alt="">
+                    </a>
+                    <div class="footer__contacts">
+                        <div class="footer__contacts-item">
+                            <img src="img/svg/footemail.svg" alt="">
+                            <a href="email:senimenbolahsaq@gmail.com" class="foot__email">senimenbolahsaq@gmail.com</a>
+                        </div>
+                        <div class="footer__contacts-item">
+                            <img src="img/svg/footlocal.svg" alt="">
+                            <span class="foot__street">Нур-Султан, <br>
+                                ул. Кунаева 2, БЦ “ССС”</span>
+                        </div>
+                        <div class="footer__contacts-item">
+                            <img src="img/svg/footcall.svg" alt="">
+                            <div class="foot__tels">
+                                <a href="tel:8 702 953 20 20" class="foot__tel">8 702 953 20 20</a>
+                                <a href="tel:8 771 571 74 75" class="foot__tel">8 771 571 74 75</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__center">
+                    <div class="footer__about">
+                        <div class="footer__title">О проекте</div>
+                        <div class="footer__text txt">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing facilisi aenean sit porttitor dis. Urna quis tempor eget mattis tellus arcu, eu vulputate. Tortor rhoncus, viverra congue tellus libero suscipit fusce in ullamcorper.
+                                Congue eget id vel neque.</p>
+                        </div>
+                    </div>
+                    <div class="footer__nav">
+                        <div class="footer__title">Быстрые ссылки</div>
+                        <ul class="footer__list">
+                            <li class="footer__list-item"><a href="#" class="footer__list-link">Главная</a></li>
+                            <li class="footer__list-item"><a href="#" class="footer__list-link">О нас</a></li>
+                            <li class="footer__list-item"><a href="#" class="footer__list-link">Новости</a></li>
+                            <li class="footer__list-item"><a href="#" class="footer__list-link">Курсы</a></li>
+                            <li class="footer__list-item"><a href="#" class="footer__list-link">О членстве в РОО</a></li>
+                            <li class="footer__list-item"><a href="#" class="footer__list-link">Наша команда</a></li>
+                            <li class="footer__list-item"><a href="#" class="footer__list-link">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__links-pages">
+                        <div class="footer__title">Наши страницы</div>
+                        <a href="#" target="_blank" class="footer__links-item pink-hover">
+                            <img src="img/svg/instfoot.svg" alt=""> @senimem.bolashaq
+                        </a>
+                        <a href="#" target="_blank" class="footer__links-item pink-hover">
+                            <img src="img/svg/whatfoot.svg" alt=""> 8 702 953 20 20
+                        </a>
+                        <a href="#" target="_blank" class="footer__links-item pink-hover">
+                            <img src="img/svg/telegfoot.svg" alt=""> @senimem.bolashaq
+                        </a>
+                        <form action="" class="mailing">
+                            <span>Подпишитесь на рассылку</span>
+                            <div class="mailing__box">
+                                <input type="email" class="mailing-email" placeholder="Введите свой E-Mail" required>
+                                <label for="mailing-sbm" class="mailing-sbm red-btn">
+                                    <span>Подписаться</span>
+                                    <input type="submit" class="mailinig-submit" id="mailing-sbm">
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="up">
+                    <img src="img/svg/up.svg" alt="">
+                    <span>Вверх</span>
+                </div>
+                <div class="footer__bot">
+                    <div class="footer__copy">Copyright © 2021 All rights reserved</div>
+                    <a href="https://astanacreative.kz/" target="_blank" class="footer__ast pink-hover">Сайт разработан AstanaCreative</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="https://yastatic.net/share2/share.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
