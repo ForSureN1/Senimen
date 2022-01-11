@@ -21,6 +21,33 @@ $('.news__slider').slick({
     nextArrow: '<button type="button" class="slick_arrow slick_next"><svg width="11" height="19" viewBox="0 0 11 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L10 9.5L1 18" stroke="white" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
 })
 
+$('.reviews__slider-photo').slick({
+    autoplay: true,
+    arrows: true,
+    dots: false,
+    Infinity: true,
+    speed: 1500,
+    autoplaySpeed: 3000,
+    asNavFor: ".reviews__slider-info",
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    centerMode: true,
+    variableWidth: true,
+    prevArrow: '<button type="button" class="slick_arrow slick_prev"><img src="img/svg/paggleft.svg"></button>',
+    nextArrow: '<button type="button" class="slick_arrow slick_next"><img src="img/svg/paggright.svg"></button>',
+})
+
+$('.reviews__slider-info').slick({
+    autoplay: false,
+    arrows: false,
+    dots: false,
+    asNavFor: ".reviews__slider-photo",
+    Infinity: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade: true,
+})
+
 document.addEventListener('DOMContentLoaded', () => {
 
     //search header
@@ -113,12 +140,14 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     }
 
-    let formAppSbm = document.querySelector('.application-submit')
-    let formApp = document.querySelector('.form-application')
+    let formAppSbm = document.querySelector('.js-application-submit')
+    let formApp = document.querySelector('.js-form-application')
     let validateSelect = document.querySelector('.js-select-application')
     if (formAppSbm) {
         formAppSbm.addEventListener('click', validate)
         formApp.addEventListener('input', checkValidate)
+    }
+    if (validateSelect) {
         validateSelect.addEventListener('input', () => {
             if (validateSelect.classList.contains('err')) {
                 validateSelect.classList.remove('err')
@@ -165,12 +194,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 break;
             }
         }
-        if (validateSelect.value == "disabled") {
-            validateSelect.classList.add("err");
-            // console.log(validateSelect.value)
-            e.preventDefault();
+        if (validateSelect) {
+            if (validateSelect.value == "disabled") {
+                validateSelect.classList.add("err");
+                // console.log(validateSelect.value)
+                e.preventDefault();
+            }
         }
-
     }
 
 

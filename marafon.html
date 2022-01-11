@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -65,129 +66,89 @@
                             <a href="#" class="breadcrumbs__link">Главная</a>
                         </li>
                         <li class="breadcrumbs__item">
-                            <a href="javascript:;" class="breadcrumbs__link">О членстве в РОО</a>
+                            <a href="#" class="breadcrumbs__link">Мероприятия</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a href="javascript:;" class="breadcrumbs__link">Форум</a>
                         </li>
                     </ol>
                 </div>
             </div>
         </section>
-        <section class="application">
+        <section class="forum">
             <div class="container">
-                <div class="application__container content">
-                    <div class="application__pretitle pre-title">станьте частью нашей команды</div>
-                    <div class="application__title title">анкетирование на вступление в членство</div>
-                    <div class="application__form">
-                        <form action="" class="form-application js-form-application">
-                            <div class="application__form-row">
-                                <div class="application__form-col">
-                                    <span class="application__form-elem">ФИО:<span class="application-required">*</span></span>
-                                    <input type="text" class="application__input js-required" placeholder="Мой ответ">
-                                    <span class="reqField"><img src="img/svg/err.svg" alt="">Это обязательное поле</span>
-                                </div>
-                            </div>
-                            <div class="application__form-row">
-                                <div class="application__form-col">
-                                    <span class="application__form-elem">Ваш возраст:<span class="application-required">*</span></span>
-                                    <input type="text" class="application__input js-required" placeholder="Мой ответ">
-                                    <span class="reqField"><img src="img/svg/err.svg" alt="">Это обязательное поле</span>
-                                </div>
-                            </div>
-                            <div class="application__form-row">
-                                <div class="application__form-col">
-                                    <span class="application__form-elem">ФИО вашего (-ей) супруга / супруги:</span>
-                                    <input type="text" class="application__input" placeholder="Мой ответ">
-                                </div>
-                            </div>
-                            <div class="application__form-row">
-                                <div class="application__form-col">
-                                    <span class="application__form-elem">Возраст вашего (-ей) супруга / супруги:</span>
-                                    <input type="text" class="application__input" placeholder="Мой ответ">
-                                </div>
-                            </div>
-                            <div class="application__form-row">
-                                <div class="application__form-col">
-                                    <span class="application__form-elem">Вы проживаете в:<span class="application-required">*</span></span>
-                                    <div class="application-select__wrapper">
-                                        <select name="" id="" class="application-select js-select-application">
-                                            <option value="disabled" selected disabled hidden>Город</option>
-                                            <option value="Нур-Султан">г. Нур-Султан</option>
-                                            <option value="Нур-Султан">г.Алма-Ата</option>
-                                            <option value="Нур-Султан">г. Караганда</option>
-                                            <option value="Нур-Султан">г. Шымкент</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="application__form-row">
-                                <div class="application__form-col">
-                                    <span class="application__form-elem">Есть ли у вас дети:<span class="application-required">*</span></span>
-                                    <label for="radio-yes" class="application-label">
-                                        <input type="radio" class="application__radio js-required" id="radio-yes" name="child"  checked>
-                                        <div class="form-check-circle">1</div>
-                                        <span>Да</span>
-                                    </label>
-                                    <label for="radio-no" class="application-label">
-                                        <input type="radio" class="application__radio" id="radio-no" name="child">
-                                        <div class="form-check-circle">1</div>
-                                        <span>Нет</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="application__form-row">
-                                <div class="application__form-col">
-                                    <span class="application__form-elem">Ваш номер телефона:<span class="application-required">*</span></span>
-                                    <input type="tel" class="application__input js-required" placeholder="Введите номер телефона">
-                                    <span class="reqField"><img src="img/svg/err.svg" alt="">Это обязательное поле</span>
-                                </div>
-                            </div>
-                            <div class="application__form-row">
-                                <div class="application__form-col">
-                                    <span class="application__form-elem">Ваша электронная почта:</span>
-                                    <input type="tel" class="application__input" placeholder="Введите электронную почту">
-                                </div>
-                            </div>
-                            <div class="application__form-row">
-                                <div class="application__form-col">
-                                    <span class="application__form-elem">Вы можете ознакомиться с Положением о членстве по ссылкам:</span>
-                                    <div class="application__link-row">
-                                        <span>Правила</span><a href="#" target="_blank" class="application__link blue-hover">https://tinyurl.com/erejeSB</a>
-                                    </div>
-                                    <div class="application__link-row">
-                                        <span>Положение</span><a href="#" target="_blank" class="application__link blue-hover">https://tinyurl.com/erejeSB</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="application__form-row">
-                                <div class="application__form-col">
-                                    <span class="application__form-elem">Я подтверждаю, что все данные заполненные мною верны. Я ознакомлен с Положением и намереваюсь стать членом РОО «Сенімен Болашақ»<span class="application-required">*</span></span>
-                                    <label for="confirm" class="application-label">
-                                        <input type="checkbox" class="application__radio js-required" id="confirm" required>
-                                        <div class="form-check-circle">1</div>
-                                        <span>Да, подтверждаю</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="application__form-sbm">
-                                <label for="application-sbm" class="application-sbm red-btn">
-                                    <span>Отправить</span>
-                                    <input type="submit" class="application-submit js-application-submit" id="application-sbm">
-                                </label>
-                            </div>
-                        </form>
+                <div class="forum__container content">
+                    <div class="forum__left">
+                        <div class="forum__date">23 декабря 2021</div>
+                        <div class="forum__title">Республиканский форум для родителей «Родители - гнездо народа»</div>
+                        <div class="forum__txt txt">
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo sit adipiscing risus pellentesque mi adipiscing convallis nisi. Consectetur etiam diam erat nisl. Condimentum ac, risus eget a sollicitudin leo, orci mi pellentesque.
+                                Sagittis etiam quis pharetra nisl, dignissim non. Pharetra nisi, bibendum libero suspendisse. Dignissim nulla semper vulputate sed faucibus odio quis praesent. Luctus facilisis vel habitasse vestibulum aenean pharetra facilisi.
+                                Viverra pulvinar cras pulvinar est pretium. Urna, tortor sed ac congue.</p>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo sit adipiscing risus pellentesque mi adipiscing convallis nisi. Consectetur etiam diam erat nisl. Condimentum ac, risus eget a sollicitudin leo, orci mi pellentesque.
+                                Sagittis etiam quis pharetra nisl, dignissim non. Pharetra nisi, bibendum libero suspendisse. Dignissim nulla semper vulputate sed faucibus odio quis praesent. Luctus facilisis vel habitasse vestibulum aenean pharetra facilisi.
+                                Viverra pulvinar cras pulvinar est pretium. Urna, tortor sed ac congue.</p>
+                        </div>
+                    </div>
+                    <div class="marafon__photo">
+                        <div class="marafon__photo-item">
+                            <img src="img/marafon.jpg" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="application-blob">
-                <img src="img/actual-blob.png" alt="">
+        </section>
+        <section class="gallery">
+            <div class="container">
+                <div class="gallery__container content">
+                    <div class="gallery__title title-forum">Наша галерея</div>
+                    <div class="gallery__items">
+                        <div class="gallery__item" data-fancybox="gall" data-src="https://www.youtube.com/embed/44Wjhelb-5I"><img src="img/gall1.jpg" alt=""></div>
+                        <div class="gallery__item" data-fancybox="gall" data-src="https://www.youtube.com/embed/44Wjhelb-5I"><img src="img/gall2.jpg" alt=""></div>
+                        <div class="gallery__item" data-fancybox="gall" data-src="https://www.youtube.com/embed/44Wjhelb-5I"><img src="img/gall2.jpg" alt=""></div>
+                        <div class="gallery__item" data-fancybox="gall" data-src="https://www.youtube.com/embed/44Wjhelb-5I"><img src="img/gall2.jpg" alt=""></div>
+                        <div class="gallery__item" data-fancybox="gall" data-src="https://www.youtube.com/embed/44Wjhelb-5I"><img src="img/gall2.jpg" alt=""></div>
+                        <div class="gallery__item" data-fancybox="gall" data-src="https://www.youtube.com/embed/44Wjhelb-5I"><img src="img/gall2.jpg" alt=""></div>
+                        <div class="gallery__item" data-fancybox="gall" data-src="https://www.youtube.com/embed/44Wjhelb-5I"><img src="img/gall2.jpg" alt=""></div>
+                        <div class="gallery__item" data-fancybox="gall" data-src="https://www.youtube.com/embed/44Wjhelb-5I"><img src="img/gall2.jpg" alt=""></div>
+                        <div class="gallery__item" data-fancybox="gall" data-src="https://www.youtube.com/embed/44Wjhelb-5I"><img src="img/gall2.jpg" alt=""></div>
+                        <div class="gallery__item" data-fancybox="gall" data-src="https://www.youtube.com/embed/44Wjhelb-5I"><img src="img/gall2.jpg" alt=""></div>
+                        <div class="gallery__item" data-fancybox="gall" data-src="https://www.youtube.com/embed/44Wjhelb-5I"><img src="img/gall2.jpg" alt=""></div>
+                        <div class="gallery__item" data-fancybox="gall" data-src="https://www.youtube.com/embed/44Wjhelb-5I"><img src="img/gall2.jpg" alt=""></div>
+
+                    </div>
+                </div>
             </div>
-            <div class="pink">
-                <div class="pink-blur"></div>
-            </div>
-            <div class="orange">
-                <div class="orange-blur"></div>
-            </div>
-            <div class="free-blob">
-                <img src="img/free-blob.png" alt="">
+        </section>
+        <section class="video">
+            <div class="container">
+                <div class="video__container content">
+                    <div class="video__title title-forum">Видео с форума</div>
+                    <div class="video__items">
+                        <div class="video__item" data-fancybox="video" data-src="https://www.youtube.com/embed/44Wjhelb-5I">
+                            <img src="img/videos.jpg" alt="">
+                            <div class="autoplay">
+                                <svg width="104" height="104" viewBox="0 0 104 104" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M40.9189 35.3276L70.9421 52.1561L40.9189 68.9846V35.3276Z" fill="#FEE187"></path>
+                                <path class="playrotate" d="M40.9195 71.9196C40.4064 71.9196 39.8937 71.7852 39.4358 71.5169C38.5367 70.9903 37.9844 70.0261 37.9844 68.9845V35.3276C37.9844 34.2856 38.5367 33.3217 39.4358 32.7952C40.335 32.2686 41.4459 32.2578 42.3547 32.7673L72.3782 49.5958C73.3046 50.1149 73.8781 51.0941 73.8781 52.1561C73.8781 53.2181 73.3044 54.1972 72.3782 54.7163L42.3545 71.5448C41.9083 71.7949 41.4138 71.9196 40.9195 71.9196ZM43.8546 40.3376V63.9745L64.9398 52.1561L43.8546 40.3376Z" fill="#FEBC48"></path>
+                                <path class="rotate-two" d="M51.9992 103.912C38.1748 103.912 25.1778 98.528 15.4023 88.7529C14.2562 87.6068 14.2562 85.7483 15.4023 84.6017C16.5484 83.4556 18.4069 83.4556 19.5534 84.6017C28.2199 93.2686 39.7428 98.0412 51.9994 98.0412C64.256 98.0412 75.7787 93.2684 84.4453 84.6017C93.1115 75.9353 97.8846 64.4124 97.8846 52.156C97.8846 39.8996 93.1117 28.3767 84.4451 19.7101C75.7783 11.0432 64.2558 6.27061 51.9992 6.27061C39.7426 6.27061 28.2199 11.0435 19.5534 19.7101C7.97798 31.2856 3.4348 48.3071 7.69615 64.1326C8.11768 65.6978 7.19052 67.3083 5.62512 67.7298C4.06072 68.1515 2.44942 67.2242 2.0279 65.6588C-0.297465 57.0239 -0.349019 47.8807 1.8791 39.2181C4.17454 30.2919 8.85115 22.1109 15.4025 15.5591C25.1776 5.78399 38.1748 0.400391 51.9992 0.400391C65.8236 0.400391 78.8205 5.78399 88.5961 15.5591C98.3714 25.3345 103.755 38.3314 103.755 52.156C103.755 65.9806 98.3712 78.9774 88.5961 88.7529C78.8205 98.528 65.8236 103.912 51.9992 103.912Z" fill="#FEBC48"></path>
+                                <path class="rotate-one" d="M51.9992 91.787C30.1464 91.787 12.3682 74.0086 12.3682 52.156C12.3682 30.3034 30.1464 12.5249 51.9992 12.5249C66.137 12.5249 79.3064 20.1441 86.3676 32.4094C87.1763 33.8141 86.6931 35.6087 85.2884 36.4176C83.8839 37.2265 82.0891 36.7431 81.2802 35.3384C75.2636 24.8876 64.0435 18.3951 51.9992 18.3951C33.3834 18.3951 18.2384 33.5403 18.2384 52.156C18.2384 70.7716 33.3836 85.9168 51.9992 85.9168C70.6149 85.9168 85.7601 70.7716 85.7601 52.156C85.7601 50.535 87.0742 49.2209 88.6952 49.2209C90.3162 49.2209 91.6303 50.535 91.6303 52.156C91.6303 74.0088 73.8516 91.787 51.9992 91.787Z" fill="#FEBC48"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="video__item" data-fancybox="video" data-src="https://www.youtube.com/embed/44Wjhelb-5I">
+                            <img src="img/videos.jpg" alt="">
+                            <div class="autoplay">
+                                <svg width="104" height="104" viewBox="0 0 104 104" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M40.9189 35.3276L70.9421 52.1561L40.9189 68.9846V35.3276Z" fill="#FEE187"></path>
+                                <path class="playrotate" d="M40.9195 71.9196C40.4064 71.9196 39.8937 71.7852 39.4358 71.5169C38.5367 70.9903 37.9844 70.0261 37.9844 68.9845V35.3276C37.9844 34.2856 38.5367 33.3217 39.4358 32.7952C40.335 32.2686 41.4459 32.2578 42.3547 32.7673L72.3782 49.5958C73.3046 50.1149 73.8781 51.0941 73.8781 52.1561C73.8781 53.2181 73.3044 54.1972 72.3782 54.7163L42.3545 71.5448C41.9083 71.7949 41.4138 71.9196 40.9195 71.9196ZM43.8546 40.3376V63.9745L64.9398 52.1561L43.8546 40.3376Z" fill="#FEBC48"></path>
+                                <path class="rotate-two" d="M51.9992 103.912C38.1748 103.912 25.1778 98.528 15.4023 88.7529C14.2562 87.6068 14.2562 85.7483 15.4023 84.6017C16.5484 83.4556 18.4069 83.4556 19.5534 84.6017C28.2199 93.2686 39.7428 98.0412 51.9994 98.0412C64.256 98.0412 75.7787 93.2684 84.4453 84.6017C93.1115 75.9353 97.8846 64.4124 97.8846 52.156C97.8846 39.8996 93.1117 28.3767 84.4451 19.7101C75.7783 11.0432 64.2558 6.27061 51.9992 6.27061C39.7426 6.27061 28.2199 11.0435 19.5534 19.7101C7.97798 31.2856 3.4348 48.3071 7.69615 64.1326C8.11768 65.6978 7.19052 67.3083 5.62512 67.7298C4.06072 68.1515 2.44942 67.2242 2.0279 65.6588C-0.297465 57.0239 -0.349019 47.8807 1.8791 39.2181C4.17454 30.2919 8.85115 22.1109 15.4025 15.5591C25.1776 5.78399 38.1748 0.400391 51.9992 0.400391C65.8236 0.400391 78.8205 5.78399 88.5961 15.5591C98.3714 25.3345 103.755 38.3314 103.755 52.156C103.755 65.9806 98.3712 78.9774 88.5961 88.7529C78.8205 98.528 65.8236 103.912 51.9992 103.912Z" fill="#FEBC48"></path>
+                                <path class="rotate-one" d="M51.9992 91.787C30.1464 91.787 12.3682 74.0086 12.3682 52.156C12.3682 30.3034 30.1464 12.5249 51.9992 12.5249C66.137 12.5249 79.3064 20.1441 86.3676 32.4094C87.1763 33.8141 86.6931 35.6087 85.2884 36.4176C83.8839 37.2265 82.0891 36.7431 81.2802 35.3384C75.2636 24.8876 64.0435 18.3951 51.9992 18.3951C33.3834 18.3951 18.2384 33.5403 18.2384 52.156C18.2384 70.7716 33.3836 85.9168 51.9992 85.9168C70.6149 85.9168 85.7601 70.7716 85.7601 52.156C85.7601 50.535 87.0742 49.2209 88.6952 49.2209C90.3162 49.2209 91.6303 50.535 91.6303 52.156C91.6303 74.0088 73.8516 91.787 51.9992 91.787Z" fill="#FEBC48"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="feedback">
@@ -302,6 +263,7 @@
     </footer>
 
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="https://yastatic.net/share2/share.js"></script>
     <script src="js/script.js"></script>
