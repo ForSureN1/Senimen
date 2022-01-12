@@ -429,11 +429,13 @@
     -webkit-mask-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/sun.svg); */
     mask-image: url('../img/mask3.png');
     -webkit-mask-image: url('../img/mask3.png');
-    -webkit-mask-size: 94%;
+    -webkit-mask-size: contain;
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-position: center;
-    width: 1200px;
-    height: 1100px;
+    width: 80%;
+    height: 80%;
+    top: -5%;
+    right: -15%;
 }
 
 .preview-blob-1 * {
@@ -3728,6 +3730,12 @@ ul.slick-dots li.slick-active button {
     .preview-blob-4 {
         top: 30%;
         transform: translateY(-50%);
+    }
+    .preview-blob-1 {
+        width: 70%;
+        height: 70%;
+        top: 30%;
+        right: -10%;
     }
 }
 
