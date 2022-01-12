@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/jquery.fancybox.css">
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -58,7 +57,104 @@
     </header>
     <div class="header__bg"></div>
     <main class="main">
-        <section class="registration">
+        <section class="breadcrumbs">
+            <div class="container">
+                <div class="breadcrumbs__container">
+                    <ol class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a href="#" class="breadcrumbs__link">Главная</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a href="javascript:;" class="breadcrumbs__link">О членстве в РОО</a>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        <section class="application personal-area">
+            <div class="container">
+                <div class="application__container content">
+                    <div class="application__form">
+                        <form action="" class="form-application js-form-application">
+                            <div class="form-row">
+                                <div class="form-col">
+                                    <div class="application__form-row">
+                                        <div class="application__form-col">
+                                            <span class="application__form-elem">ФИО:<span class="application-required">*</span></span>
+                                            <input type="text" class="application__input js-required" placeholder="Мой ответ">
+                                            <span class="reqField"><img src="img/svg/err.svg" alt="">Это обязательное поле</span>
+                                        </div>
+                                    </div>
+                                    <div class="application__form-row">
+                                        <div class="application__form-col">
+                                            <span class="application__form-elem">Ваш возраст:</span>
+                                            <input type="text" class="application__input" placeholder="Мой ответ">
+                                        </div>
+                                    </div>
+                                    <div class="application__form-row">
+                                        <div class="application__form-col">
+                                            <span class="application__form-elem">Вы проживаете в:<span class="application-required">*</span></span>
+                                            <div class="application-select__wrapper">
+                                                <select name="" id="" class="application-select js-select-application">
+                                                    <option value="disabled" selected disabled hidden>Город</option>
+                                                    <option value="Нур-Султан">г. Нур-Султан</option>
+                                                    <option value="Нур-Султан">г.Алма-Ата</option>
+                                                    <option value="Нур-Султан">г. Караганда</option>
+                                                    <option value="Нур-Султан">г. Шымкент</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="application__form-row">
+                                        <div class="application__form-col">
+                                            <span class="application__form-elem">Есть ли у вас дети:<span class="application-required">*</span></span>
+                                            <label for="radio-yes" class="application-label">
+                                                <input type="radio" class="application__radio js-required" id="radio-yes" name="child"  checked>
+                                                <div class="form-check-circle">1</div>
+                                                <span>Да</span>
+                                            </label>
+                                            <label for="radio-no" class="application-label">
+                                                <input type="radio" class="application__radio" id="radio-no" name="child">
+                                                <div class="form-check-circle">1</div>
+                                                <span>Нет</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="application__form-sbm">
+                                        <label for="application-sbm" class="application-sbm red-btn">
+                                            <span>Сохранить</span>
+                                            <input type="submit" class="application-submit js-application-submit" id="application-sbm">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-col">
+                                    <div class="application__form-row">
+                                        <div class="application__form-col">
+                                            <span class="application__form-elem">Ваш номер телефона:<span class="application-required">*</span></span>
+                                            <input type="tel" class="application__input js-required" placeholder="Введите номер телефона">
+                                            <span class="reqField"><img src="img/svg/err.svg" alt="">Это обязательное поле</span>
+                                        </div>
+                                    </div>
+                                    <div class="application__form-row">
+                                        <div class="application__form-col">
+                                            <span class="application__form-elem">Ваша электронная почта:<span class="application-required">*</span></span>
+                                            <input type="tel" class="application__input js-required" placeholder="Введите электронную почту">
+                                            <span class="reqField"><img src="img/svg/err.svg" alt="">Это обязательное поле</span>
+                                        </div>
+                                    </div>
+                                    <div class="application__form-row pass">
+                                        <div class="application__form-col">
+                                            <span class="application__form-elem">Изменить пароль:</span>
+                                            <input type="tel" class="application__input js-required" placeholder="Введите старый пароль">
+                                            <input type="tel" class="application__input js-required" placeholder="Введите новый пароль">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
             <div class="application-blob">
                 <img src="img/actual-blob.png" alt="">
             </div>
@@ -70,71 +166,6 @@
             </div>
             <div class="free-blob">
                 <img src="img/free-blob.png" alt="">
-            </div>
-            <div class="container">
-                <div class="registration__container content">
-                    <form action="" class="regist__form js-form-application">
-                        <div class="registration__box">
-                            <div class="registration__header">
-                                <div class="registration__header-title">Регистрация аккаунта на Senimen Bolashaq</div>
-                                <div class="registration__header-pretitle">Обучайтесь уже сегодня вместе с нашим сообществом!</div>
-                            </div>
-                            <div class="application__form-row">
-                                <div class="application__form-col">
-                                    <span class="application__form-elem">ФИО:<span class="application-required">*</span></span>
-                                    <input type="text" class="application__input js-required" placeholder="Мой ответ">
-                                    <span class="reqField"><img src="img/svg/err.svg" alt="">Это обязательное поле</span>
-                                </div>
-                            </div>
-                            <div class="application__form-row">
-                                <div class="application__form-col">
-                                    <span class="application__form-elem">Электронная почта:<span class="application-required">*</span></span>
-                                    <input type="text" class="application__input js-required" placeholder="Мой ответ">
-                                    <span class="reqField"><img src="img/svg/err.svg" alt="">Это обязательное поле</span>
-                                </div>
-                            </div>
-                            <div class="application__form-row">
-                                <div class="application__form-col">
-                                    <span class="application__form-elem">Номер телефона:<span class="application-required">*</span></span>
-                                    <input type="tel" class="application__input js-required" placeholder="Мой ответ">
-                                    <span class="reqField"><img src="img/svg/err.svg" alt="">Это обязательное поле</span>
-                                </div>
-                            </div>
-                            <div class="application__form-row">
-                                <div class="application__form-col">
-                                    <span class="application__form-elem">Пароль:<span class="application-required">*</span></span>
-                                    <input type="password" class="application__input js-required" placeholder="Мой ответ">
-                                    <span class="reqField"><img src="img/svg/err.svg" alt="">Это обязательное поле</span>
-                                </div>
-                            </div>
-                            <div class="application__form-row">
-                                <div class="application__form-col">
-                                    <label for="confirm" class="application-label">
-                                        <input type="checkbox" class="application__radio js-required" id="confirm" required>
-                                        <div class="form-check-circle">1</div>
-                                        <span>Согласен на обработку информации</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="application__form-row center reset-margin">
-                                <label for="application-sbm" class="application-sbm red-btn">
-                                    <span>Зарегистрироваться</span>
-                                    <input type="submit" class="application-submit js-application-submit" id="application-sbm">
-                                </label>
-                            </div>
-                            <div class="application__form-row center reset-margin">
-                                <span>У меня уже есть аккаунт</span>
-                            </div>
-                            <div class="application__form-row center">
-                                <a href="avtoriz.html" class="free__link white-btn">
-                                    Войти
-                                    <span class='red'>Войти</span>
-                                    <span class='orange-btn'>Войти</span>
-                                </a>
-                            </div>
-                        </div>
-                    </form>
-                </div>
             </div>
         </section>
         <section class="feedback">
@@ -249,7 +280,6 @@
     </footer>
 
     <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="https://yastatic.net/share2/share.js"></script>
     <script src="js/script.js"></script>

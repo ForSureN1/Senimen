@@ -50,6 +50,32 @@ $('.reviews__slider-info').slick({
 
 document.addEventListener('DOMContentLoaded', () => {
 
+    let hamb = document.querySelector('.hamb')
+    let hambbtn = document.getElementById('nav-icon3')
+    let headerMenu = document.querySelector('.menu')
+
+    hamb.addEventListener('click', function() {
+        hambbtn.classList.toggle('open')
+        hamb.classList.toggle('active')
+        if (hamb.classList.contains('active')) {
+            $('.menu').slideDown();
+        }
+        if (!hamb.classList.contains('active')) {
+            $('.menu').slideUp();
+        }
+    });
+
+    $('.js-slide').on("click", function(e) {
+        const target = e.target
+        if (target.classList.contains('active')) {
+            $(target.nextElementSibling).slideUp();
+            target.classList.remove('active')
+        } else {
+            $(target.nextElementSibling).slideDown();
+            target.classList.add('active')
+        }
+    });
+
     //search header
     let search_btn = document.querySelector('.search__sbm')
     let search_txt = document.querySelector('.search__txt')
