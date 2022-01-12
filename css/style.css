@@ -382,6 +382,7 @@
 
 .preview__container {
     position: relative;
+    z-index: 10;
 }
 
 .pink {
@@ -420,7 +421,7 @@
     top: -20%;
     right: -10%;
     width: 60%;
-    height: 90%;
+    height: 60%;
 }
 
 .preview-blob-1 {
@@ -3634,6 +3635,11 @@ ul.slick-dots li.slick-active button {
     .nav__item {
         margin-right: 30px;
     }
+    .preview-blob-1 {
+        width: 60%;
+        height: 60%;
+        top: 0;
+    }
 }
 
 @media(max-width: 1560px) {
@@ -3720,7 +3726,7 @@ ul.slick-dots li.slick-active button {
     .preview-blob-2,
     .preview-blob-3,
     .preview-blob-4 {
-        top: 50%;
+        top: 30%;
         transform: translateY(-50%);
     }
 }
@@ -3735,11 +3741,77 @@ ul.slick-dots li.slick-active button {
     .preview__text {
         width: 40%;
     }
+    .preview__title {
+        font-size: 42px;
+    }
+}
+
+@media(max-width: 1100px) {
+    .preview-blob-1,
+    .preview-blob-2,
+    .preview-blob-3,
+    .preview-blob-4 {
+        width: 60%;
+        height: 60%;
+    }
 }
 
 @media(max-width: 992px) {
     .header__items {
         padding: 10px 0;
+    }
+    .preview__title {
+        font-size: 42px;
+    }
+    .preview-blob-1,
+    .preview-blob-2,
+    .preview-blob-3,
+    .preview-blob-4 {
+        width: 90%;
+        height: 90%;
+        top: 40%;
+    }
+    .preview__title,
+    .preview__text {
+        width: 100%;
+    }
+    .preview__title,
+    .preview__pretitle,
+    .preview__text {
+        text-align: center;
+    }
+    .preview__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media(max-width: 700px) {
+    .preview__title {
+        font-size: 40px;
+    }
+    .text-white-vertical {
+        font-size: 90px;
+    }
+    .preview .pink {
+        left: -41%;
+    }
+}
+
+@media(max-width: 600px) {
+    .preview .pink {
+        top: 30%;
+        left: -11%;
+        width: 300px;
+        height: 400px;
+    }
+    .preview-blob-1,
+    .preview-blob-2,
+    .preview-blob-3,
+    .preview-blob-4 {
+        width: 100%;
+        height: 80%;
     }
 }
 
@@ -3765,6 +3837,14 @@ ul.slick-dots li.slick-active button {
     }
     .account__link {
         display: none;
+    }
+    .preview__title {
+        font-size: 32px;
+    }
+    .preview .preview-blob-5,
+    .preview .preview-blob-6,
+    .preview .preview-blob-7 {
+        left: -40%;
     }
 }
 
