@@ -308,6 +308,7 @@
     text-transform: uppercase;
     margin-bottom: 50px;
     text-align: center;
+    line-height: 140%;
 }
 
 .preview__title {
@@ -718,6 +719,10 @@
     position: relative;
 }
 
+.slider__pretitle {
+    padding-top: 75px;
+}
+
 .slider__title {
     text-align: center;
 }
@@ -998,6 +1003,11 @@ ul.slick-dots li.slick-active button {
     top: 50%;
     left: -50%;
     z-index: -1;
+}
+
+.free .free-blob img {
+    width: 100%;
+    height: 100%;
 }
 
 .news__items {
@@ -3676,6 +3686,9 @@ ul.slick-dots li.slick-active button {
     .white__card {
         padding: 30px 20px 20px 20px;
     }
+    .free__img {
+        height: 320px;
+    }
 }
 
 @media(max-width: 1560px) {
@@ -3711,6 +3724,16 @@ ul.slick-dots li.slick-active button {
         font-size: 36px;
         margin-bottom: 40px;
     }
+    .free__img {
+        height: 300px;
+    }
+    .free__item-title {
+        padding: 0 30px;
+    }
+    .free .free-blob {
+        height: 100%;
+        top: 20%;
+    }
 }
 
 @media(max-width: 1400px) {
@@ -3744,6 +3767,9 @@ ul.slick-dots li.slick-active button {
     }
     .slider__items ul.slick-dots {
         top: 75%;
+    }
+    .free__img {
+        height: 280px;
     }
 }
 
@@ -3837,6 +3863,16 @@ ul.slick-dots li.slick-active button {
         font-size: 32px;
         margin-bottom: 35px;
     }
+    .free__img {
+        height: 240px;
+    }
+    .free__item-title {
+        font-size: 20px;
+    }
+    .free__link {
+        padding: 12px 30px;
+        margin-bottom: 30px;
+    }
 }
 
 @media(max-width: 1200px) {
@@ -3875,11 +3911,21 @@ ul.slick-dots li.slick-active button {
         width: 300px;
         height: 650px;
     }
+    .free__img {
+        height: 220px;
+    }
+    .free__item-title {
+        margin: 20px 0;
+    }
+    .free__link {}
 }
 
 @media(max-width: 992px) {
     .content {
         padding: 50px 0;
+    }
+    .slider__pretitle {
+        padding-top: 50px;
     }
     .header__items {
         padding: 10px 0;
@@ -3945,6 +3991,15 @@ ul.slick-dots li.slick-active button {
     .pre-title {
         font-size: 18px;
     }
+    .free__img {
+        height: 200px;
+    }
+    .free__link {
+        font-size: 14px;
+    }
+    .free__item-title {
+        font-size: 18px;
+    }
 }
 
 @media(max-width: 850px) {
@@ -3965,6 +4020,18 @@ ul.slick-dots li.slick-active button {
     }
     .slider__item {
         height: 170px;
+    }
+    .free__item {
+        width: 32%;
+    }
+    .free__items {
+        column-gap: 2%;
+    }
+    .free__img {
+        height: 250px;
+    }
+    .free .free-blob {
+        height: 70%;
     }
 }
 
@@ -4009,6 +4076,9 @@ ul.slick-dots li.slick-active button {
     .slider__date {
         font-size: 12px;
     }
+    .free__img {
+        height: 220px;
+    }
 }
 
 @media(max-width: 700px) {
@@ -4051,6 +4121,9 @@ ul.slick-dots li.slick-active button {
     .white__card-line {
         margin: 50px 0;
     }
+    .free__img {
+        height: 200px;
+    }
 }
 
 @media(max-width: 600px) {
@@ -4069,6 +4142,15 @@ ul.slick-dots li.slick-active button {
     .preview-blob-1 {
         right: -5%;
     }
+    .free__item {
+        width: 49%;
+    }
+    .free__img {
+        height: 280px;
+    }
+    .free__item-title {
+        margin: 40px 0;
+    }
 }
 
 @media(max-width: 620px) {
@@ -4083,6 +4165,9 @@ ul.slick-dots li.slick-active button {
     }
     .white__card-line {
         margin: 30px 0;
+    }
+    .free__img {
+        height: 240px;
     }
 }
 
@@ -4110,6 +4195,19 @@ ul.slick-dots li.slick-active button {
     }
     .white__card {
         padding: 20px 15px 10px 15px;
+    }
+    .free__img {
+        height: 220px;
+    }
+    .free__item-title {
+        margin: 30px 0;
+    }
+    .free__item-title {
+        padding: 0 10px;
+    }
+    .free .pink {
+        width: 80%;
+        height: 80%;
     }
 }
 
@@ -4150,6 +4248,15 @@ ul.slick-dots li.slick-active button {
     .slider__items {
         margin: 0;
     }
+    .free__item {
+        width: 80%;
+    }
+    .free .free-blob {
+        display: none;
+    }
+    .free__img {
+        height: 300px;
+    }
 }
 
 @media(max-width: 430px) {
@@ -4173,5 +4280,8 @@ ul.slick-dots li.slick-active button {
     .logo {
         width: 130px;
         height: 40px;
+    }
+    .free__img {
+        height: 270px;
     }
 }
