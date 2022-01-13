@@ -795,11 +795,16 @@ ul.slick-dots li.slick-active button {
 }
 
 .slider .pink {
-    height: 250px;
+    height: 70%;
+    width: 400px;
     top: 50%;
     transform: translateY(-50%);
     right: 0;
     left: auto;
+}
+
+.slider .pink-blur {
+    filter: blur(30px);
 }
 
 .slider .preview-blob-2 {
@@ -807,7 +812,13 @@ ul.slick-dots li.slick-active button {
     top: 50%;
     transform: translateY(-50%);
     width: 500px;
-    height: 500px;
+    height: 100%;
+    z-index: -2;
+}
+
+.slider .preview-blob-2 svg {
+    width: 100%;
+    height: 100%;
 }
 
 .free__items {
@@ -3683,6 +3694,9 @@ ul.slick-dots li.slick-active button {
     .preview .pink {
         left: -6%;
     }
+    .slider__item {
+        height: 230px;
+    }
 }
 
 @media(max-width: 1480px) {
@@ -3721,6 +3735,15 @@ ul.slick-dots li.slick-active button {
     }
     .title {
         font-size: 34px;
+    }
+    .slider__item {
+        height: 210px;
+    }
+    .slider__text {
+        font-size: 16px;
+    }
+    .slider__items ul.slick-dots {
+        top: 75%;
     }
 }
 
@@ -3813,6 +3836,12 @@ ul.slick-dots li.slick-active button {
     .title {
         font-size: 32px;
         margin-bottom: 35px;
+    }
+}
+
+@media(max-width: 1200px) {
+    .slider__item {
+        height: 190px;
     }
 }
 
@@ -3913,6 +3942,9 @@ ul.slick-dots li.slick-active button {
     .title {
         font-size: 26px;
     }
+    .pre-title {
+        font-size: 18px;
+    }
 }
 
 @media(max-width: 850px) {
@@ -3930,6 +3962,9 @@ ul.slick-dots li.slick-active button {
     .best__pretitle,
     .best__title {
         text-align: center;
+    }
+    .slider__item {
+        height: 170px;
     }
 }
 
@@ -3964,6 +3999,15 @@ ul.slick-dots li.slick-active button {
     }
     .title {
         margin-bottom: 20px;
+    }
+    .slider__item {
+        margin: 0 10px;
+    }
+    .slider__text {
+        font-size: 14px;
+    }
+    .slider__date {
+        font-size: 12px;
     }
 }
 
@@ -4102,6 +4146,9 @@ ul.slick-dots li.slick-active button {
     }
     .title {
         font-size: 22px;
+    }
+    .slider__items {
+        margin: 0;
     }
 }
 
