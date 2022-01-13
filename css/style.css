@@ -654,6 +654,10 @@
     width: 45%;
 }
 
+.best__item:last-child {
+    overflow: hidden;
+}
+
 .best__pretitle {
     text-align: left;
 }
