@@ -4435,6 +4435,19 @@ ul.slick-dots li.slick-active button {
     .about__content-title {
         font-size: 28px;
     }
+    .about__img-item {
+        width: 100%;
+        height: 100%;
+    }
+    .about__img-items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about__img-item-first {
+        width: 95%;
+        height: 95%;
+    }
 }
 
 @media(max-width: 480px) {
