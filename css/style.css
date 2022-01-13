@@ -3693,6 +3693,9 @@ ul.slick-dots li.slick-active button {
     .feedback__blob {
         width: 55%;
     }
+    .about__content {
+        width: 45%;
+    }
 }
 
 @media(max-width: 1560px) {
@@ -3854,6 +3857,9 @@ ul.slick-dots li.slick-active button {
     .news__item.w-24 .news__img {
         height: 230px;
     }
+    .about__content {
+        width: 50%;
+    }
 }
 
 @media(max-width: 1300px) {
@@ -3905,6 +3911,19 @@ ul.slick-dots li.slick-active button {
     }
     .footer__nav {
         padding-left: 6%;
+    }
+    .about__items {
+        flex-direction: column-reverse;
+    }
+    .about__content {
+        width: 100%;
+        margin-top: 50px;
+        text-align: center;
+    }
+    .about__content-title {
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 20px;
     }
 }
 
@@ -3986,6 +4005,9 @@ ul.slick-dots li.slick-active button {
     body {
         font-size: 16px;
     }
+    .feedback {
+        margin-top: 50px;
+    }
     .content {
         padding: 50px 0;
     }
@@ -4056,6 +4078,15 @@ ul.slick-dots li.slick-active button {
     }
     .preview__text {
         color: #3C3664;
+    }
+    .about__img {
+        width: 60%;
+    }
+    .about__content {
+        margin-top: 30px;
+    }
+    .about__content-title {
+        width: 90%;
     }
 }
 
@@ -4179,6 +4210,9 @@ ul.slick-dots li.slick-active button {
     .footer__title {
         font-size: 22px;
     }
+    .about__content-text p:not(:last-child) {
+        margin-bottom: 10px;
+    }
 }
 
 @media(max-width: 750px) {
@@ -4267,6 +4301,9 @@ ul.slick-dots li.slick-active button {
         width: 200px;
         flex-shrink: 0;
     }
+    .about__img {
+        width: 80%;
+    }
 }
 
 @media(max-width: 600px) {
@@ -4345,6 +4382,13 @@ ul.slick-dots li.slick-active button {
     .news__item.w-24 .news__img {
         height: 200px;
     }
+    .about__content-title {
+        width: 100%;
+        font-size: 32px;
+    }
+    .about .pink {
+        width: 100%;
+    }
 }
 
 @media(max-width: 500px) {
@@ -4387,6 +4431,9 @@ ul.slick-dots li.slick-active button {
     }
     .feedback__form-row:not(:last-child) {
         margin-bottom: 30px;
+    }
+    .about__content-title {
+        font-size: 28px;
     }
 }
 
@@ -4457,6 +4504,15 @@ ul.slick-dots li.slick-active button {
     }
     .footer__top {
         margin-bottom: 30px;
+    }
+    .about__content-title {
+        font-size: 22px;
+    }
+    .about__content {
+        margin-top: 10px;
+    }
+    .about__img {
+        width: 100%;
     }
 }
 
