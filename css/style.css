@@ -3799,6 +3799,10 @@ ul.slick-dots li.slick-active button {
     .preview__text {
         width: 60%;
     }
+    .preview-blob-1 {
+        width: 90%;
+        top: 40%;
+    }
 }
 
 @media(max-width: 700px) {
@@ -3811,6 +3815,9 @@ ul.slick-dots li.slick-active button {
     .preview .pink {
         left: -41%;
     }
+    .preview-blob-1 {
+        top: 30%;
+    }
 }
 
 @media(max-width: 600px) {
@@ -3820,12 +3827,20 @@ ul.slick-dots li.slick-active button {
         width: 300px;
         height: 400px;
     }
-    .preview-blob-1,
     .preview-blob-2,
     .preview-blob-3,
     .preview-blob-4 {
         width: 100%;
         height: 80%;
+    }
+    .preview-blob-1 {
+        right: -5%;
+    }
+}
+
+@media(max-width: 620px) {
+    .preview__title {
+        font-size: 36px;
     }
 }
 
