@@ -4070,13 +4070,14 @@ ul.slick-dots li.slick-active button {
 
 @media(max-width: 430px) {
     .white__card {
-        width: 80%;
+        width: 70%;
         align-items: center;
     }
     .white__card-line {
         width: 50%;
     }
-    .white__card-text {
+    .white__card-text,
+    .white__card-title {
         text-align: center;
     }
     .white__card-line {
