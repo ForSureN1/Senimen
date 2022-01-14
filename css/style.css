@@ -3755,6 +3755,9 @@ ul.slick-dots li.slick-active button {
         height: 350px;
         margin: auto;
     }
+    .event__item {
+        height: 250px;
+    }
 }
 
 @media(max-width: 1560px) {
@@ -4038,6 +4041,9 @@ ul.slick-dots li.slick-active button {
         width: 100%;
         font-size: 28px;
     }
+    .event__item {
+        height: 230px;
+    }
 }
 
 @media(max-width: 1300px) {
@@ -4199,6 +4205,12 @@ ul.slick-dots li.slick-active button {
     .news__title {
         font-size: 18px;
     }
+    .event__item {
+        height: 200px;
+    }
+    .event__title {
+        font-size: 16px;
+    }
 }
 
 @media(max-width: 1200px) {
@@ -4316,6 +4328,9 @@ ul.slick-dots li.slick-active button {
     .news__img-wrapper {
         width: 100%;
         height: 300px;
+    }
+    .event__item {
+        height: 180px;
     }
 }
 
@@ -4492,6 +4507,15 @@ ul.slick-dots li.slick-active button {
     .footer__links-pages {
         width: 65%;
     }
+    .event__item {
+        height: 230px;
+        width: 48%;
+    }
+    .events__items {
+        column-gap: 4%;
+        -moz-column-gap: 4%;
+        -webkit-column-gap: 4%;
+    }
 }
 
 @media(max-width: 900px) {
@@ -4597,6 +4621,9 @@ ul.slick-dots li.slick-active button {
     .team__img {
         width: 150px;
         height: 150px;
+    }
+    .event__item {
+        height: 210px;
     }
 }
 
@@ -4723,6 +4750,9 @@ ul.slick-dots li.slick-active button {
     .lesson__training,
     .lesson__notes {
         width: 49%;
+    }
+    .event__item {
+        height: 200px;
     }
 }
 
@@ -4858,6 +4888,9 @@ ul.slick-dots li.slick-active button {
     .news__inner-title {
         font-size: 24px;
     }
+    .event__item {
+        height: 180px;
+    }
 }
 
 @media(max-width: 620px) {
@@ -4962,6 +4995,13 @@ ul.slick-dots li.slick-active button {
     .news__item.w-33 .news__img {
         height: 200px;
     }
+    .event__item {
+        width: 80%;
+        height: 250px;
+    }
+    .events__items {
+        justify-content: center;
+    }
 }
 
 @media(max-width: 550px) {
@@ -5010,6 +5050,13 @@ ul.slick-dots li.slick-active button {
         margin-bottom: 20px;
     }
     .chapter .pink {
+        width: 80%;
+    }
+    .event__item {
+        width: 90%;
+        height: 230px;
+    }
+    .events .pink {
         width: 80%;
     }
 }
@@ -5238,6 +5285,9 @@ ul.slick-dots li.slick-active button {
     }
     .news__inner-share.news__share:hover {
         transform: unset;
+    }
+    .event__item {
+        height: 180px;
     }
 }
 
