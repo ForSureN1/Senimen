@@ -1746,7 +1746,6 @@ ul.slick-dots li.slick-active button {
 
 .partners__item {
     grid-row: auto;
-    margin:
 }
 
 .partners__item div img {
@@ -3777,6 +3776,12 @@ ul.slick-dots li.slick-active button {
         width: 210px;
         height: 210px;
     }
+    .application__form-elem {
+        font-size: 22px;
+    }
+    .application__form {
+        width: 700px;
+    }
 }
 
 @media(max-width: 1480px) {
@@ -4045,6 +4050,11 @@ ul.slick-dots li.slick-active button {
         -moz-column-gap: 2.5%;
         -webkit-column-gap: 2.6%;
     }
+    .application .free-blob img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
 }
 
 @media(max-width: 1200px) {
@@ -4134,6 +4144,21 @@ ul.slick-dots li.slick-active button {
     .team__img {
         width: 180px;
         height: 180px;
+    }
+    .application__form-elem {
+        font-size: 20px;
+    }
+    .application__form-row {
+        margin-bottom: 30px;
+    }
+    .application__form {
+        width: 600px;
+    }
+    .form-application {
+        padding: 40px;
+    }
+    .application__link-row span {
+        width: 25%;
     }
 }
 
@@ -4405,6 +4430,10 @@ ul.slick-dots li.slick-active button {
         height: 100%;
         width: 80%;
     }
+    .application .orange,
+    .application .pink {
+        width: 70%;
+    }
 }
 
 @media(max-width: 750px) {
@@ -4478,6 +4507,9 @@ ul.slick-dots li.slick-active button {
     .internet__img {
         align-self: center;
     }
+    .application__form {
+        width: 80%;
+    }
 }
 
 @media(max-width: 680px) {
@@ -4538,6 +4570,9 @@ ul.slick-dots li.slick-active button {
     }
     .about__img {
         width: 80%;
+    }
+    .application__form {
+        width: 90%;
     }
 }
 
@@ -4655,6 +4690,9 @@ ul.slick-dots li.slick-active button {
     .team .orange {
         width: 80%;
     }
+    .application__form {
+        width: 100%;
+    }
 }
 
 @media(max-width: 500px) {
@@ -4716,6 +4754,12 @@ ul.slick-dots li.slick-active button {
     }
     .about .orange {
         width: 80%;
+    }
+    .application__form-elem {
+        font-size: 18px;
+    }
+    .application__form-elem {
+        margin-bottom: 10px;
     }
 }
 
@@ -4802,6 +4846,9 @@ ul.slick-dots li.slick-active button {
     }
     .actual.other .orange {
         width: 80%;
+    }
+    .form-application {
+        padding: 30px 20px;
     }
 }
 
