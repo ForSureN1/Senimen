@@ -4988,6 +4988,13 @@ ul.slick-dots li.slick-active button {
     .application__form {
         width: 100%;
     }
+    .news__tabs {
+        flex-direction: column;
+    }
+    .news__tab-link:first-child {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
 }
 
 @media(max-width: 500px) {
