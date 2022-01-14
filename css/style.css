@@ -2456,6 +2456,7 @@ ul.slick-dots li.slick-active button {
     -moz-column-gap: 30px;
     -webkit-column-gap: 30px;
     margin-bottom: 30px;
+    row-gap: 20px;
 }
 
 .lesson__box-bot-elems {
@@ -3792,6 +3793,21 @@ ul.slick-dots li.slick-active button {
     .application__form {
         width: 700px;
     }
+    .lesson__training-title,
+    .lesson__notes-title,
+    .training-list__item,
+    .lesson__list-item,
+    .lesson__training-pretitle,
+    .lesson__notes-pretitle {
+        font-size: 20px;
+    }
+    .lesson__box-title {
+        font-size: 30px;
+    }
+    .lesson__box-price,
+    .lesson__box-time {
+        font-size: 28px;
+    }
 }
 
 @media(max-width: 1480px) {
@@ -3983,6 +3999,13 @@ ul.slick-dots li.slick-active button {
     .thank__content-item {
         justify-content: center;
     }
+    .lesson__training,
+    .lesson__notes {
+        padding: 30px 20px;
+    }
+    .lesson__left {
+        width: 62%;
+    }
 }
 
 @media(max-width: 1300px) {
@@ -4083,6 +4106,53 @@ ul.slick-dots li.slick-active button {
         width: 100%;
         height: 100%;
         object-fit: contain;
+    }
+    .lesson__training-title,
+    .lesson__notes-title,
+    .training-list__item,
+    .lesson__list-item,
+    .lesson__training-pretitle,
+    .lesson__notes-pretitle,
+    .lesson__box-pretitle {
+        font-size: 18px;
+    }
+    .lesson__training-title,
+    .lesson__notes-title,
+    .lesson__box-top-elems {
+        margin-bottom: 20px;
+    }
+    .lesson__box-title {
+        font-size: 26px;
+    }
+    .lesson__box-pretitle {
+        margin-bottom: 10px;
+    }
+    .lesson__box-text {
+        font-size: 16px;
+    }
+    .lesson__box-price,
+    .lesson__box-time {
+        font-size: 22px;
+    }
+    .lesson__box-wrapper {
+        padding: 20px 30px 20px 30px;
+    }
+    .training-list__item,
+    .lesson__list-item {
+        margin-bottom: 20px;
+    }
+    .lesson__training-title img,
+    .lesson__notes-title img {
+        width: 30px;
+        height: 30px;
+    }
+    .training-list__item span,
+    .lesson__list-item span {
+        width: 30px;
+    }
+    .lesson__training-pretitle,
+    .lesson__notes-pretitle {
+        padding-left: 52px;
     }
 }
 
@@ -4185,6 +4255,15 @@ ul.slick-dots li.slick-active button {
     }
     .application__link-row span {
         width: 25%;
+    }
+    .training-list__item span,
+    .lesson__list-item span,
+    .lessson__box-access {
+        font-size: 18px;
+    }
+    .autoplay {
+        width: 80px;
+        height: 80px;
     }
 }
 
@@ -4295,6 +4374,31 @@ ul.slick-dots li.slick-active button {
     }
     .thank__content-title {
         font-size: 30px;
+    }
+    .lesson__items {
+        flex-direction: column-reverse;
+    }
+    .lesson__right {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .lesson__training,
+    .lesson__notes {
+        width: 47%;
+        height: max-content;
+    }
+    .lesson__notes {
+        margin-top: 0;
+    }
+    .lesson__left {
+        width: 100%;
+        margin-top: 30px;
+    }
+    .lesson__video {
+        height: 100%;
+        max-height: 100%;
+        min-height: auto;
     }
 }
 
@@ -4513,6 +4617,10 @@ ul.slick-dots li.slick-active button {
     .free.other .orange {
         width: 80%;
     }
+    .lesson__training,
+    .lesson__notes {
+        width: 49%;
+    }
 }
 
 @media(max-width: 700px) {
@@ -4549,6 +4657,15 @@ ul.slick-dots li.slick-active button {
     }
     .application__form {
         width: 80%;
+    }
+    .lesson__training-title,
+    .lesson__notes-title,
+    .training-list__item,
+    .lesson__list-item,
+    .lesson__training-pretitle,
+    .lesson__notes-pretitle,
+    .lesson__box-pretitle {
+        font-size: 16px;
     }
 }
 
@@ -4614,6 +4731,14 @@ ul.slick-dots li.slick-active button {
     .application__form {
         width: 90%;
     }
+    .lesson__training-pretitle,
+    .lesson__notes-pretitle {
+        margin-bottom: 20px;
+    }
+    .lesson .orange,
+    .lesson .pink {
+        width: 80%;
+    }
 }
 
 @media(max-width: 620px) {
@@ -4630,9 +4755,50 @@ ul.slick-dots li.slick-active button {
     .partners__item:nth-child(6n+4)>div {
         margin: auto;
     }
+    .lesson__right {
+        flex-direction: column;
+    }
+    .lesson__training,
+    .lesson__notes {
+        width: 100%;
+    }
+    .lesson__notes {
+        margin-top: 30px;
+    }
+}
+
+@media(max-width: 620px) {
+    .preview__title {
+        font-size: 36px;
+    }
+    .lesson__box-price,
+    .lesson__box-time {
+        font-size: 18px;
+    }
 }
 
 @media(max-width: 600px) {
+    .footer__links-pages .footer__title,
+    .footer__links-item {
+        display: none;
+    }
+    .footer__center,
+    .footer__top {
+        align-items: center;
+        flex-direction: column;
+    }
+    .footer__nav {
+        width: auto;
+        text-align: center;
+    }
+    .footer__links-pages {
+        width: 100%;
+    }
+    .footer__contacts {
+        padding-left: 0;
+        justify-content: center;
+        margin-top: 50px;
+    }
     .preview .pink {
         top: 30%;
         left: -11%;
@@ -4663,35 +4829,10 @@ ul.slick-dots li.slick-active button {
     .footer__copy {
         margin-top: 30px;
     }
-}
-
-@media(max-width: 620px) {
-    .preview__title {
-        font-size: 36px;
-    }
-}
-
-@media(max-width: 600px) {
-    .footer__links-pages .footer__title,
-    .footer__links-item {
-        display: none;
-    }
-    .footer__center,
-    .footer__top {
-        align-items: center;
-        flex-direction: column;
-    }
-    .footer__nav {
-        width: auto;
-        text-align: center;
-    }
-    .footer__links-pages {
-        width: 100%;
-    }
-    .footer__contacts {
-        padding-left: 0;
-        justify-content: center;
-        margin-top: 50px;
+    .training-list__item span,
+    .lesson__list-item span,
+    .lessson__box-access {
+        font-size: 16px;
     }
 }
 
@@ -4820,6 +4961,9 @@ ul.slick-dots li.slick-active button {
     .thank__content-pretitle {
         font-size: 22px;
     }
+    .lesson__box-title {
+        font-size: 22px;
+    }
 }
 
 @media(max-width: 480px) {
@@ -4917,6 +5061,13 @@ ul.slick-dots li.slick-active button {
     }
     .thank__content-pretitle {
         font-size: 18px;
+    }
+    .lesson__box-price,
+    .lesson__box-time {
+        padding: 8px 20px;
+    }
+    .lesson__box-wrapper {
+        padding: 15px;
     }
 }
 
