@@ -4374,6 +4374,7 @@ ul.slick-dots li.slick-active button {
     }
     .partners .pink {
         height: 100%;
+        width: 80%;
     }
 }
 
@@ -4664,6 +4665,9 @@ ul.slick-dots li.slick-active button {
         width: 95%;
         height: 95%;
     }
+    .about .orange {
+        width: 80%;
+    }
 }
 
 @media(max-width: 480px) {
@@ -4745,6 +4749,7 @@ ul.slick-dots li.slick-active button {
     }
     .partners__items {
         grid-template-columns: repeat(2, 47%);
+        grid-gap: 20px;
     }
 }
 
