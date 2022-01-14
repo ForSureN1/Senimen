@@ -4751,6 +4751,9 @@ ul.slick-dots li.slick-active button {
         grid-template-columns: repeat(2, 47%);
         grid-gap: 20px;
     }
+    .actual.other .orange {
+        width: 80%;
+    }
 }
 
 @media(max-width: 430px) {
