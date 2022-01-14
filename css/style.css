@@ -2057,6 +2057,8 @@ ul.slick-dots li.slick-active button {
 }
 
 .application-select {
+    -webkit-appearance: none;
+    background: #fff;
     width: 100%;
     border-radius: 30px;
     padding: 12px 22px;
@@ -4147,9 +4149,6 @@ ul.slick-dots li.slick-active button {
     }
     .application__form-elem {
         font-size: 20px;
-    }
-    .application__form-row {
-        margin-bottom: 30px;
     }
     .application__form {
         width: 600px;
