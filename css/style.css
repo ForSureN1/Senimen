@@ -1423,8 +1423,9 @@ ul.slick-dots li.slick-active button {
 
 .breadcrumbs__list {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     flex-wrap: wrap;
+    row-gap: 10px;
 }
 
 .breadcrumbs__item:not(:last-child) {
