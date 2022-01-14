@@ -3758,6 +3758,9 @@ ul.slick-dots li.slick-active button {
     .event__item {
         height: 250px;
     }
+    .peculiarities.other .peculiarities__title {
+        width: 100%!important;
+    }
 }
 
 @media(max-width: 1560px) {
@@ -3827,6 +3830,12 @@ ul.slick-dots li.slick-active button {
     .news__sidebar {
         margin-left: 50px;
     }
+    .forum__title {
+        font-size: 30px;
+    }
+    .forum__speakers {
+        margin-top: 70px;
+    }
 }
 
 @media(max-width: 1480px) {
@@ -3873,6 +3882,14 @@ ul.slick-dots li.slick-active button {
     }
     .first-news .news__title {
         font-size: 22px;
+    }
+    .forum__speakers .team__img {
+        width: 190px;
+        height: 190px;
+    }
+    .title-forum {
+        margin-bottom: 40px;
+        font-size: 32px;
     }
 }
 
@@ -3946,6 +3963,22 @@ ul.slick-dots li.slick-active button {
     }
     .news__sidebar {
         margin-left: 40px;
+    }
+    .forum__training-title {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    .forum__training-title img,
+    .forum-list__item img {
+        width: 35px;
+        height: 35px;
+    }
+    .forum__speakers .team__img {
+        width: 170px;
+        height: 170px;
+    }
+    .forum__title {
+        font-size: 26px;
     }
 }
 
@@ -4043,6 +4076,14 @@ ul.slick-dots li.slick-active button {
     }
     .event__item {
         height: 230px;
+    }
+    .team__item.w-24 {
+        width: 30%;
+    }
+    .forum__teams {
+        column-gap: 5%;
+        -moz-column-gap: 5%;
+        -webkit-column-gap: 5%;
     }
 }
 
@@ -4211,6 +4252,12 @@ ul.slick-dots li.slick-active button {
     .event__title {
         font-size: 16px;
     }
+    .forum-list__item {
+        font-size: 16px;
+    }
+    .forum__training-title {
+        font-size: 18px;
+    }
 }
 
 @media(max-width: 1200px) {
@@ -4331,6 +4378,27 @@ ul.slick-dots li.slick-active button {
     }
     .event__item {
         height: 180px;
+    }
+    .forum__right {
+        position: absolute;
+        right: -320px;
+        margin-left: 0;
+        transition: right .3s ease-in-out, opacity .1s linear;
+        opacity: .7;
+    }
+    .forum__right:hover {
+        right: 0;
+        opacity: 1;
+    }
+    .forum {
+        overflow: hidden;
+        position: relative;
+    }
+    .forum .orange {
+        height: 50%;
+        width: 30%;
+        top: 50%;
+        transform: translateY(-50%);
     }
 }
 
@@ -4494,6 +4562,10 @@ ul.slick-dots li.slick-active button {
     }
     .news__inner-img {
         height: 300px;
+    }
+    .title-forum {
+        margin-bottom: 30px;
+        font-size: 28px;
     }
 }
 
@@ -4891,6 +4963,25 @@ ul.slick-dots li.slick-active button {
     .event__item {
         height: 180px;
     }
+    .forum__speakers {
+        margin-top: 40px;
+    }
+    .team__item.w-24 {
+        width: 47%;
+    }
+    .forum__teams {
+        column-gap: 6%;
+        -moz-column-gap: 6%;
+        -webkit-column-gap: 6%;
+    }
+    .forum__title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .peculiarities .pink {
+        width: 80%;
+        height: 80%;
+    }
 }
 
 @media(max-width: 620px) {
@@ -5154,6 +5245,12 @@ ul.slick-dots li.slick-active button {
         -moz-column-gap: 30px;
         -webkit-column-gap: 30px;
     }
+    .forum__title {
+        font-size: 22px;
+    }
+    .title-forum {
+        font-size: 24px;
+    }
 }
 
 @media(max-width: 480px) {
@@ -5289,6 +5386,9 @@ ul.slick-dots li.slick-active button {
     .event__item {
         height: 180px;
     }
+    .team__item.w-24 {
+        width: 100%;
+    }
 }
 
 @media(max-width: 430px) {
@@ -5347,6 +5447,10 @@ ul.slick-dots li.slick-active button {
     }
     .news__item.w-33 .news__img {
         height: 250px;
+    }
+    .forum__right {
+        width: 100%;
+        right: -90%;
     }
 }
 
