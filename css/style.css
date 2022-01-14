@@ -2315,6 +2315,14 @@ ul.slick-dots li.slick-active button {
     height: 100%;
     position: relative;
     cursor: pointer;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.thank__video-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .autoplay {
@@ -3821,6 +3829,10 @@ ul.slick-dots li.slick-active button {
     .internet__content {
         width: 65%;
     }
+    .thank__video {
+        width: 700px;
+        height: 402px;
+    }
 }
 
 @media(max-width: 1400px) {
@@ -3886,6 +3898,10 @@ ul.slick-dots li.slick-active button {
     .team__img {
         width: 190px;
         height: 190px;
+    }
+    .thank__video {
+        width: 650px;
+        height: 380px;
     }
 }
 
@@ -3955,6 +3971,17 @@ ul.slick-dots li.slick-active button {
     }
     .about__content {
         width: 50%;
+    }
+    .thank__items {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .thank__content {
+        margin-top: 50px;
+        text-align: center;
+    }
+    .thank__content-item {
+        justify-content: center;
     }
 }
 
@@ -4266,6 +4293,9 @@ ul.slick-dots li.slick-active button {
     .internet__img {
         margin-bottom: -50px;
     }
+    .thank__content-title {
+        font-size: 30px;
+    }
 }
 
 @media(max-width: 950px) {
@@ -4433,6 +4463,10 @@ ul.slick-dots li.slick-active button {
     .application .pink {
         width: 70%;
     }
+    .thank__video {
+        width: 90%;
+        margin-left: 0;
+    }
 }
 
 @media(max-width: 750px) {
@@ -4471,6 +4505,13 @@ ul.slick-dots li.slick-active button {
         column-gap: 2%;
         -moz-column-gap: 2%;
         -webkit-column-gap: 2%;
+    }
+    .thank__video {
+        height: 100%;
+    }
+    .thank__container .pink,
+    .free.other .orange {
+        width: 80%;
     }
 }
 
@@ -4760,6 +4801,25 @@ ul.slick-dots li.slick-active button {
     .application__form-elem {
         margin-bottom: 10px;
     }
+    .thank__content-item {
+        width: 48%;
+    }
+    .thank__content-items {
+        justify-content: center;
+    }
+    .thank__content-item {
+        justify-content: flex-start;
+    }
+    .autoplay {
+        width: 50px;
+        height: 50px;
+    }
+    .thank__content-title {
+        font-size: 26px;
+    }
+    .thank__content-pretitle {
+        font-size: 22px;
+    }
 }
 
 @media(max-width: 480px) {
@@ -4848,6 +4908,15 @@ ul.slick-dots li.slick-active button {
     }
     .form-application {
         padding: 30px 20px;
+    }
+    .thank__content-item {
+        width: 100%;
+    }
+    .thank__content-title {
+        font-size: 24px;
+    }
+    .thank__content-pretitle {
+        font-size: 18px;
     }
 }
 
