@@ -3836,6 +3836,10 @@ ul.slick-dots li.slick-active button {
     .forum__speakers {
         margin-top: 70px;
     }
+    .guest__item-name {
+        font-size: 28px;
+        padding-bottom: 35px;
+    }
 }
 
 @media(max-width: 1480px) {
@@ -4085,6 +4089,9 @@ ul.slick-dots li.slick-active button {
         -moz-column-gap: 5%;
         -webkit-column-gap: 5%;
     }
+    .guest__item-name {
+        font-size: 26px;
+    }
 }
 
 @media(max-width: 1300px) {
@@ -4258,6 +4265,17 @@ ul.slick-dots li.slick-active button {
     .forum__training-title {
         font-size: 18px;
     }
+    .guest__item-name {
+        font-size: 24px;
+    }
+    .guest__item {
+        width: 32%;
+    }
+    .guest__items {
+        column-gap: 2%;
+        -moz-column-gap: 2%;
+        -webkit-column-gap: 2%;
+    }
 }
 
 @media(max-width: 1200px) {
@@ -4266,6 +4284,9 @@ ul.slick-dots li.slick-active button {
     }
     .feedback__blob {
         width: 75%;
+    }
+    .guest__item-name {
+        font-size: 22px;
     }
 }
 
@@ -4399,6 +4420,9 @@ ul.slick-dots li.slick-active button {
         width: 30%;
         top: 50%;
         transform: translateY(-50%);
+    }
+    .guest__item-name {
+        padding-bottom: 25px;
     }
 }
 
@@ -4584,6 +4608,14 @@ ul.slick-dots li.slick-active button {
         width: 48%;
     }
     .events__items {
+        column-gap: 4%;
+        -moz-column-gap: 4%;
+        -webkit-column-gap: 4%;
+    }
+    .guest__item {
+        width: 48%;
+    }
+    .guest__items {
         column-gap: 4%;
         -moz-column-gap: 4%;
         -webkit-column-gap: 4%;
@@ -4875,6 +4907,9 @@ ul.slick-dots li.slick-active button {
     .news__item.w-33 .news__img {
         height: 230px;
     }
+    .guest__item-name {
+        font-size: 20px;
+    }
 }
 
 @media(max-width: 680px) {
@@ -5092,6 +5127,9 @@ ul.slick-dots li.slick-active button {
     }
     .events__items {
         justify-content: center;
+    }
+    .guest__item {
+        width: 100%;
     }
 }
 
@@ -5451,6 +5489,20 @@ ul.slick-dots li.slick-active button {
     .forum__right {
         width: 100%;
         right: -90%;
+    }
+    .guest__items {
+        row-gap: 30px;
+        -moz-row-gap: 30px;
+        -webkit-row-gap: 30px;
+    }
+    .guest__item-name {
+        padding-bottom: 15px;
+    }
+    .guest__item-name {
+        font-size: 18px;
+    }
+    .guest__item-info {
+        line-height: 140%;
     }
 }
 
