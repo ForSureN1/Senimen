@@ -3737,6 +3737,36 @@ ul.slick-dots li.slick-active button {
     margin-top: 30px;
 }
 
+.search__title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 50px;
+}
+
+.search__title span {
+    font-weight: 400;
+}
+
+.search {
+    position: relative;
+}
+
+.search .pink,
+.search .orange {
+    width: 30%;
+    height: 30%;
+}
+
+.search .pink {
+    top: 0;
+}
+
+.search .orange {
+    top: auto;
+    bottom: 0;
+}
+
 @media(max-width: 1650px) {
     .nav__item {
         margin-right: 30px;
@@ -3817,6 +3847,9 @@ ul.slick-dots li.slick-active button {
         width: 22px;
         height: 22px;
         background-size: contain;
+    }
+    .search__title {
+        font-size: 36px;
     }
 }
 
@@ -4228,6 +4261,9 @@ ul.slick-dots li.slick-active button {
     .contact__email::before {
         width: 20px;
         height: 20px;
+    }
+    .search__title {
+        font-size: 30px;
     }
 }
 
@@ -4785,6 +4821,9 @@ ul.slick-dots li.slick-active button {
     .contact__schedule,
     .contact__email {
         font-size: 18px;
+    }
+    .search__title {
+        font-size: 26px;
     }
 }
 
@@ -5349,6 +5388,9 @@ ul.slick-dots li.slick-active button {
     }
     .registration__header-pretitle {
         padding: 0 30px 30px 30px;
+    }
+    .search__title {
+        font-size: 22px;
     }
 }
 
