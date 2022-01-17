@@ -440,8 +440,8 @@
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-position: center;
     width: 80%;
-    height: 80%;
-    top: -5%;
+    height: auto!important;
+    top: -2%;
     right: -15%;
 }
 
@@ -4560,7 +4560,7 @@ ul.slick-dots li.slick-active button {
         width: 60%;
     }
     .preview-blob-1 {
-        width: 90%;
+        width: 100%;
         top: 40%;
     }
     .peculiarities .orange {
