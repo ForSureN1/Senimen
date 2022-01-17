@@ -3767,6 +3767,35 @@ ul.slick-dots li.slick-active button {
     bottom: 0;
 }
 
+.notfound {
+    height: 100vh;
+    background: url('../img/404.png') left no-repeat;
+    background-size: contain;
+}
+
+.notfound__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+}
+
+.notfound__num {
+    font-size: 200px;
+    font-weight: 800;
+    color: #C32130;
+}
+
+.notfound__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    line-height: 160%;
+    font-weight: 500;
+}
+
 @media(max-width: 1650px) {
     .nav__item {
         margin-right: 30px;
@@ -4825,6 +4854,9 @@ ul.slick-dots li.slick-active button {
     .search__title {
         font-size: 26px;
     }
+    .notfound__num {
+        font-size: 170px;
+    }
 }
 
 @media(max-width: 950px) {
@@ -5391,6 +5423,9 @@ ul.slick-dots li.slick-active button {
     }
     .search__title {
         font-size: 22px;
+    }
+    .notfound__num {
+        font-size: 140px;
     }
 }
 
