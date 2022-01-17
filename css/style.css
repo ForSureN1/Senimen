@@ -3803,6 +3803,21 @@ ul.slick-dots li.slick-active button {
     .forum__title {
         font-size: 32px;
     }
+    .contact__city {
+        font-size: 28px;
+    }
+    .contact__num,
+    .contact__schedule,
+    .contact__email {
+        font-size: 22px;
+    }
+    .contact__num::before,
+    .contact__schedule::before,
+    .contact__email::before {
+        width: 22px;
+        height: 22px;
+        background-size: contain;
+    }
 }
 
 @media(max-width: 1560px) {
@@ -4200,6 +4215,20 @@ ul.slick-dots li.slick-active button {
         width: 80%;
         height: 80%;
     }
+    .contact__city {
+        font-size: 26px;
+    }
+    .contact__num,
+    .contact__schedule,
+    .contact__email {
+        font-size: 20px;
+    }
+    .contact__num::before,
+    .contact__schedule::before,
+    .contact__email::before {
+        width: 20px;
+        height: 20px;
+    }
 }
 
 @media(max-width: 1300px) {
@@ -4410,6 +4439,9 @@ ul.slick-dots li.slick-active button {
     .guest__item-name {
         font-size: 22px;
     }
+    .contacts__items {
+        padding: 0 20px;
+    }
 }
 
 @media(max-width: 1100px) {
@@ -4556,6 +4588,16 @@ ul.slick-dots li.slick-active button {
     }
     .marafon__photo-item {
         width: 600px;
+    }
+    .contact__item {
+        width: 40%;
+    }
+    .contacts__items {
+        padding-left: 40px;
+        padding-right: 0;
+        column-gap: 20%;
+        -moz-column-gap: 20%;
+        -webkit-column-gap: 20%;
     }
 }
 
@@ -4734,6 +4776,15 @@ ul.slick-dots li.slick-active button {
     }
     .registration__header-pretitle {
         font-size: 16px;
+    }
+    .contact__city {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    .contact__num,
+    .contact__schedule,
+    .contact__email {
+        font-size: 18px;
     }
 }
 
@@ -5054,6 +5105,15 @@ ul.slick-dots li.slick-active button {
     .form-col {
         width: 48%;
     }
+    .contact__city {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .contact__num,
+    .contact__schedule,
+    .contact__email {
+        margin-bottom: 20px;
+    }
 }
 
 @media(max-width: 700px) {
@@ -5147,6 +5207,17 @@ ul.slick-dots li.slick-active button {
     .application__form-sbm.personal {
         justify-content: center;
         margin-top: 50px;
+    }
+    .contacts__items {
+        padding: 0;
+    }
+    .contact__item {
+        width: 60%;
+    }
+    .contacts .orange,
+    .contacts .pink {
+        width: 60%;
+        height: 60%;
     }
 }
 
@@ -5482,6 +5553,9 @@ ul.slick-dots li.slick-active button {
     .registration__box {
         width: 90%;
     }
+    .contact__item {
+        width: 70%;
+    }
 }
 
 @media(max-width: 500px) {
@@ -5749,6 +5823,12 @@ ul.slick-dots li.slick-active button {
     }
     .application-sbm {
         padding: 17px 45px;
+    }
+    .contact__item {
+        width: 90%;
+    }
+    .contacts__items {
+        padding-left: 20px;
     }
 }
 
