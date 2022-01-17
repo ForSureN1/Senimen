@@ -3733,6 +3733,10 @@ ul.slick-dots li.slick-active button {
     bottom: 10%;
 }
 
+.application__form-sbm.personal {
+    margin-top: 30px;
+}
+
 @media(max-width: 1650px) {
     .nav__item {
         margin-right: 30px;
@@ -4186,6 +4190,13 @@ ul.slick-dots li.slick-active button {
     }
     .reviews .pink,
     .reviews .orange {
+        width: 80%;
+        height: 80%;
+    }
+    .personal-area .application__form {
+        width: 100%;
+    }
+    .application .free-blob {
         width: 80%;
         height: 80%;
     }
@@ -5040,6 +5051,9 @@ ul.slick-dots li.slick-active button {
     .registration__header {
         margin-bottom: 50px;
     }
+    .form-col {
+        width: 48%;
+    }
 }
 
 @media(max-width: 700px) {
@@ -5120,6 +5134,19 @@ ul.slick-dots li.slick-active button {
     }
     .forum__left {
         margin-top: 30px;
+    }
+    .form-row {
+        flex-direction: column;
+    }
+    .form-col {
+        width: 100%;
+    }
+    .form-col:last-child {
+        margin-top: 50px;
+    }
+    .application__form-sbm.personal {
+        justify-content: center;
+        margin-top: 50px;
     }
 }
 
